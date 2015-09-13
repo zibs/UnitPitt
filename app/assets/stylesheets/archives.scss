@@ -1,0 +1,1083 @@
+// Place all the styles related to the Archives controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@mixin box_sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "UPP-Sans";
+    src: font-url('UPPSans.ttf') format('truetype'), font-url('UPPSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UPP-Sans-ExtraBold";
+    src: font-url('UPPSans-ExtraBold.woff') format('woff'), font-url('UPPSans-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "UPP-Sans-Bold";
+    src: font-url('UPPSans-Bold.woff') format('woff'), font-url('UPPSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    overflow: auto;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   2055 Project
+   ========================================================================== */
+
+html {
+    /*padding: 2em;*/
+    position: relative;
+    height: 100%;
+    /*overflow-y: hidden;*/
+}
+
+body {
+    position: relative;
+    height: 100%;
+    /*background-color: red;*/
+}
+
+.container {
+    position: relative;
+    bottom: 2%;
+}
+
+.benjamin-speaks {
+    text-align: center;
+    transform: rotate(-23deg);
+}
+
+.benjamin-speaks h1 {
+    font-family: "Noto-Serif";
+    word-wrap: break-word;
+    display: inline-block;
+    font-size: 3.5em;
+}
+
+.greyq {
+    /*color: grey;*/
+    opacity: 0.3;
+}
+
+#updown-g {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+#updown-h {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.navigation {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+.navigation h1 {
+    font-size: 3em;
+}
+
+.navigation h5 {
+    margin-top: 1.5em;
+}
+
+.navigation h2 {
+    margin-top: 1.5em;
+}
+
+.navigation a {
+    color: black;
+}
+
+.navigation a:link {
+    text-decoration: none;
+}
+
+.navigation a:visited {
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.navigation a:active {
+    text-decoration: none;
+}
+
+.unit-font {
+    font-family: "UPP-Sans-Bold";
+}
+
+.project-font {}
+
+
+
+
+/* ==========================================================================
+DIRECTORY DIRECOTRY!!!!
+   ========================================================================== */
+html.directory > body {
+    position: relative
+}
+section.timeline {
+    position: absolute;
+    // background-color: red;
+    top: 10%;
+    height: 45%;
+    width: 20%;
+}
+
+
+
+// html.directory {
+    // background: image-url("map_artistruncenters_1988.jpg") no-repeat center center fixed;
+    // -webkit-background-size: contain;
+    // -moz-background-size: contain;
+    // -o-background-size: contain;
+    // background-size: contain;
+// }
+
+// html.directory > body {
+    // background: none;
+    // overflow-x: hidden;
+// }
+// html.directory > body > main.container-fluid {
+    // margin: 0;
+    // position: relative;
+// }
+// .artist-centers-1988 {
+    // width: 100%;
+    // height: auto;   
+// }
+
+
+section.exhibition-wrapper {
+    position: fixed;
+    display: inline-block;
+    top:20%;
+    right:30%;
+    height: 2vh;
+    width:2%;
+    background-color: orange;
+    > section.exhibition-timeline {
+        position: fixed;
+        // height: 90%;
+        background-color: yellow;
+    }
+}
+
+
+
+
+
+
+/* ==========================================================================
+BORING ART!!!!BORING ART!!!!BORING ART!!!!BORING ART!!!!BORING ART!!!!BORING ART!!!!
+   ========================================================================== */
+
+html.boringart {
+    cursor: pointer;
+    /*width: 110%;*/
+    /*height: 110%;*/
+    background-image: image-url("assets/boringart.jpg");
+    background-size: 300%;
+    z-index: 2;
+    background-position: 50% 40%;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+html.boringart > body {
+    position: initial;
+    height: 0;
+    padding: 0;
+    /*background-color: red;*/
+}
+
+
+/* ==========================================================================
+OUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWS
+   ========================================================================== */
+
+html.outlaws {}
+
+html.outlaws > body {
+    position: initial;
+    height: 0;
+    padding: 0;
+}
+
+.outlaw-content > .outlaw-image {
+    cursor: pointer;
+}
+
+html.outlaws img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---DOG--*/
+
+html.doggy {
+    margin: 0;
+}
+
+html.doggy > body {
+    padding: 0;
+    background-image: url("../img/poster_dogdaze_1986.jpg");
+    height: 300vh;
+}
+
+.doggy {
+    height: 100vh;
+}
+
+
+/*----GOD-----*/
+
+html.godlogo {
+    margin: 0;
+}
+
+html.godlogo > body {
+    padding: 0;
+    background-color: black;
+    /*background-image: url("../img/poster_godlogo.jpg");*/
+    /*background-size: contain;*/
+}
+
+html.godlogo > body > main > img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*PICTOGRAPHICS*/
+
+html.pictographs {
+    margin: 0;
+}
+
+html.pictographs > body {
+    padding: 0;
+}
+
+html.pictographs > body > main > img {
+    width: 20%;
+    height: 600vh;
+}
+
+
+/*CRUCIFICATION*/
+
+html.crucifixation {
+    margin: 0;
+}
+
+html.crucifixation > body {
+    padding: 0;
+}
+
+html.crucifixation > body > .crucificymebaby {
+    width: 100%;
+}
+
+
+/*LAUNDROMAT!*/
+
+html.laundromat {
+    margin: 0;
+}
+
+html.laundromat > body {
+    padding: 0;
+}
+
+
+/*SUBLIME*/
+
+html.sublime {
+    margin: 0;
+}
+
+html.sublime > body {
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+html.sublime > body > main > img.ingrids-sublime {
+    height: 100vh;
+    width: 100vw;
+    cursor: pointer;
+}
+
+html.sublime > body > main > img.sublime-full-poster {
+    height: 100vh;
+}
+
+
+/**********************************/
+
+
+/*POINT GREY FRACTALISM*/
+
+
+/*********************************/
+
+html.greypoint {
+    margin: 0;
+}
+
+html.greypoint > body {
+    padding: 0;
+}
+
+html.greypoint > body > div > figure > .fractalism {
+    width: 100vw;
+    cursor: pointer;
+}
+
+
+/* Shine */
+
+.hover14 figure {
+    position: relative;
+}
+
+.hover14 figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.hover14 figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+
+/* ==========================================================================
+SEVEN DEADLY SINS AND THE TV
+   ========================================================================== */
+
+html.seven-sins {
+    margin: 0;
+}
+
+html.seven-sins > body {
+    padding: 0;
+    background-color: black;
+}
+
+section.sosomg > img {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* ==========================================================================
+PLAYING AROUND
+   ========================================================================== */
+
+html.play {}
+
+html.play > body > img {
+    height: 300px;
+}
+
+#bigger {
+    height: 100px;
+}
+
+#tv {
+    height: 2500px;
+}
+
+
+/* ==========================================================================
+ORAF
+   ============================================================== */
+
+html.ultralottery {
+    background: image-url("poster_winone_1985.jpg") no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+html.ultralottery > body {
+    background: none;
+    overflow-x: hidden;
+}
+
+// AGNOSTIC ANIMATIONS
+@-moz-keyframes rotateRight {
+    0% {
+        -moz-transform: rotate(0deg);
+        -moz-transform-origin: 50% 50%;
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -webkit-transform-origin: 50% 50%;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+// THE ONES
+@-webkit-keyframes movetheones {
+    from {
+        left: 0;
+    }
+    to {
+        left: 80%;
+    }
+}
+
+@-webkit-keyframes movetheoneselsewise {
+    from {
+        top: 15%
+    }
+    to {
+        top: 90%;
+    }
+}
+
+@-webkit-keyframes onediagonal {
+    from {
+        right: 15%;
+        top: 10%;
+    }
+    to {
+        top: 100%;
+        right: 85%;
+    }
+}
+@-webkit-keyframes twodia {
+    from {
+        right: 50%;
+        top: 80%;
+    }
+    to {
+        top: 100%;
+        right: 80%;
+    }
+}
+@-webkit-keyframes threedia {
+    from {
+        right: 100%;
+        top: 0%;
+    }
+    to {
+        top: 50%;
+        right: 95%;
+    }
+}
+@-webkit-keyframes fourdia {
+    from {
+        right: 15%;
+        top: 10%;
+    }
+    to {
+        top: 100%;
+        right: 85%;
+    }
+}
+@-webkit-keyframes fivedia {
+    from {
+        right: 15%;
+        top: 10%;
+    }
+    to {
+        top: 100%;
+        right: 85%;
+    }
+}
+@-webkit-keyframes sixdia {
+    from {
+        right: 15%;
+        top: 10%;
+    }
+    to {
+        top: 100%;
+        right: 85%;
+    }
+}
+
+
+html.ultralottery > body > main > section.littleone >img {
+    position: absolute;
+    max-height: 100px;
+    -webkit-animation: movetheones 5s infinite alternate;
+    &:nth-of-type(2) {
+        top: 15%;
+        -moz-animation: 13.6s rotateRight infinite linear, movetheoneselsewise 5s infinite alternate;
+        -webkit-animation: 13.6s rotateRight infinite linear, movetheoneselsewise 5s infinite alternate;
+    }
+    &:nth-of-type(3) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+        -webkit-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+    }
+    &:nth-of-type(4) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: twodia 3s infinite alternate;
+        -webkit-animation: twodia 3s infinite alternate;
+    }
+    &:nth-of-type(5) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: 2.6s rotateRight infinite linear, threedia 1.5s infinite alternate;
+        -webkit-animation: 2.6s rotateRight infinite linear, threedia 1.5s infinite alternate;
+    }
+    &:nth-of-type(6) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+        -webkit-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+    }
+    &:nth-of-type(7) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+        -webkit-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+    }
+    &:nth-of-type(8) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+        -webkit-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+    }
+    &:nth-of-type(9) {
+        right: 15%;
+        top: 10%;
+        -moz-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+        -webkit-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
+    }
+
+}
+
+// ORAF
+
+
+@-webkit-keyframes movetheotheroraf {
+    from {
+        right: 5%;
+        top: 80%;
+    }
+    to {
+        -webkit-transform: scale(4.3);
+        -ms-transform: scale(4.3);
+        transform: scale(4.3);
+    }
+}
+
+html.ultralottery > body > main > section.secretartshow > img {
+    position: absolute;
+    max-height: 30px;
+      top: 80%;
+        right: 15%;
+    -webkit-animation: movetheotheroraf 2s infinite alternate;
+    -moz-animation: movetheotheroraf 2s infinite alternate;
+    animation: movetheotheroraf 2s infinite alternate;
+   
+  
+}
+
+
+
+
+/*is this the end*/
+
+
+/*background-position: 55% 75%;*/
+
+
+/*faces*/
+
+
+/*background-position: 12% 65%;*/
+
+
+/*reviews*/
+
+
+/*background-position: 8.5% 22%;*/
+
+
+/*more text*/
+
+
+/*background-position: 100% 90%;*/
+
+
+/*face of man*/
+
+
+/*background-position: 92% 40%;*/
+
+
+/*background-size: 600%;*/
+
+
+/* background-size: 250%;
+    z-index: 2;
+    background-position: 87% 0%;*/
+
+
+/* background-size: 200%;
+    z-index: 2;
+    background-position: 55% 35%; */
+
+
+/*ending*/
+
+
+/*background-size: 50%;*/
+
+
+/*background-position: 100% 40%;*/
+
+
+/*perfect fit*/
+
+
+/*background-size: 100%;*/
+
+
+/*background-position: 50% 50%;*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media only screen and (min-width: 1500px) {
+    .benjamin-speaks {
+        margin-top: 15%;
+    }
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        font-size: 2.5em;
+        word-wrap: break-word;
+    }
+    .navigation h1 {
+        font-size: 2em;
+    }
+    .navigation h5 {
+        font-size: 1em;
+    }
+    .navigation h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        font-size: 2.5em;
+        word-wrap: break-word;
+    }
+    .navigation h1 {
+        font-size: 2em;
+    }
+    .navigation h5 {
+        font-size: 1em;
+    }
+    .navigation h2 {
+        font-size: 1.8em;
+    }
+}
+@media only screen and (min-width: 950px) {
+    .benjamin-speaks {
+        margin-top: 10%;
+    }
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        font-size: 2.5em;
+        word-wrap: break-word;
+    }
+    .navigation h1 {
+        font-size: 2em;
+    }
+    .navigation h5 {
+        font-size: 1em;
+    }
+    .navigation h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        word-wrap: break-word;
+        font-size: 2em;
+    }
+    .navigation h1 {
+        margin-top: 10%;
+        font-size: 2em;
+    }
+    .navigation h5 {
+        font-style: 0.8em;
+    }
+    .navigation h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        word-wrap: break-word;
+        font-size: 1em;
+    }
+    .navigation h1 {
+        font-size: 1em;
+    }
+    .navigation h5 {
+        font-size: 0.6em;
+    }
+    .navigation h2 {
+        font-size: 0.8em;
+    }
+}
+
+
+/*Iphone 4s*/
+
+@media only screen and (max-width: 330px) {
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        word-wrap: break-word;
+        font-size: 0.9em;
+        padding-left: 10%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .navigation h1 {
+        font-size: 0.9em;
+    }
+    .navigation h5 {
+        font-size: 0.4em;
+    }
+    .navigation h2 a {
+        font-size: 0.6em;
+    }
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

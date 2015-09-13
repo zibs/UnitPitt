@@ -1,0 +1,91 @@
+ <script type="text/javascript"
+           src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['sankey']}]}">
+</script>
+
+
+
+<script type="text/javascript">
+google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}})
+
+    data.addRows([
+       [ 'Brazil', 'Portugal', 1, "more text man enjoy it" ],
+       [ 'Brazil', 'Monday Jan. 22nd', 1, "more text man enjoy it" ],
+       [ 'Brazil', 'Spain', 1, "more text man enjoy it" ],
+       [ 'Brazil', 'England', 1, "more text man enjoy it" ],
+       [ 'Canada', 'Portugal', 1, "more text man enjoy it" ],
+       [ 'Canada', 'Monday Jan. 22nd', 1, "more text man enjoy it" ],
+       [ 'Canada', 'England', 1, "more text man enjoy it" ],
+       [ 'Mexico', 'Portugal', 1, "more text man enjoy it" ],
+       [ 'Mexico', 'Monday Jan. 22nd', 1, "more text man enjoy it" ],
+       [ 'Mexico', 'Spain', 1, "more text man enjoy it" ],
+       [ 'Mexico', 'England', 1, "more text man enjoy it" ],
+       [ 'USA', 'Portugal', 1, "more text man enjoy it" ],
+       [ 'USA', 'Monday Jan. 22nd', 1, "more text man enjoy it" ],
+       [ 'USA', 'Spain', 1, "more text man enjoy it" ],
+       [ 'USA', 'England', 1, "more text man enjoy it" ],
+       [ 'Portugal', 'March 1st', 2, "more text man enjoy it"],
+       [ 'Portugal', 'Senegal', 1, "more text man enjoy it" ],
+       [ 'Portugal', 'Morocco', 1, "more text man enjoy it" ],
+       [ 'Portugal', '2055', 1, "more text man enjoy it" ],
+       [ 'Monday Jan. 22nd', 'March 1st', 1, "more text man enjoy it" ],
+       [ 'Monday Jan. 22nd', 'Senegal', 1, "more text man enjoy it" ],
+       [ 'Monday Jan. 22nd', 'September 12th', 1, "more text man enjoy it" ],
+       [ 'Monday Jan. 22nd', 'Morocco', 3, "more text man enjoy it" ],
+       [ 'Monday Jan. 22nd', '2055', 1, "more text man enjoy it" ],
+       [ 'Spain', 'Senegal', 1, "more text man enjoy it" ],
+       [ 'Spain', 'Morocco', 3, "more text man enjoy it" ],
+       [ 'Spain', '2055', 1, "more text man enjoy it" ],
+       [ 'England', 'March 1st', 1, "more text man enjoy it" ],
+       [ 'England', 'Senegal', 1, "more text man enjoy it" ],
+       [ 'England', 'Morocco', 2, "more text man enjoy it" ],
+       [ 'England', '2055', 7, "more text man enjoy it" ],
+       [ '2055', 'January 21st, 8pm', 4, "more text man enjoy it" ],
+       [ '2055', 'May 15th, 8pm', 1, "more text man enjoy it" ],
+       [ '2055', 'Japan', 3, "some arbirary text" ],
+       [ 'March 1st', 'January 21st, 8pm', 5, "some arbirary text" ],
+       [ 'March 1st', 'May 15th, 8pm', 2, "some arbirary text" ],
+       [ 'March 1st', 'Japan', 3, "some arbirary text" ],
+       [ 'Senegal', 'January 21st, 8pm', 3, "some arbirary text" ],
+       [ 'Senegal', 'May 15th, 8pm', 1, "some arbirary text" ],
+       [ 'Senegal', 'Japan', 3, "some arbirary text" ],
+       [ 'September 12th', 'January 21st, 8pm', 5, "some arbirary text" ],
+       [ 'September 12th', 'May 15th, 8pm', 1, "some arbirary text" ],
+       [ 'September 12th', 'Japan', 3, "some arbirary text" ],
+       [ 'Morocco', 'January 21st, 8pm', 2, "some arbirary text" ],
+       [ 'Morocco', 'May 15th, 8pm', 1, "some arbirary text"],
+       [ 'Morocco', 'Japan', 3, "some arbirary text" ]
+    ]);
+	  var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+    var width  = ($(window).width() - 400);
+    var height = ($(window).height() * 4)
+    // Set chart options
+    var options = {
+      width: width,
+      focusTarget: 'category',
+      height: height,
+      tooltip: { isHtml: true },
+      sankey: {
+      	node: { colors: colors,
+      			label: {},
+      			width: 5,
+      			nodePadding: 55,
+      			interactivity: true
+      			 },
+      	link: { colorMode: 'gradient', colors: colors
+      	}
+      }
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>

@@ -1,0 +1,22 @@
+<!-- Iterate and Display Contributors -->
+<section class="contributors col-md-3">
+	<h4 class = "contributor-title">CONTRIBUTORS</h4><br>	
+	<% current_contributor = @contributor %>
+		<% @contributors.each do |contributor| %>
+		<% if current_contributor == contributor %>
+				<p class = "current_contributor">
+					<%= current_contributor.name%>
+				</p>
+		<% else %>
+				<%= link_to(contributor) do %>
+				<p><%= contributor.name %></p>
+				<!-- close link_tag -->
+				<% end %>
+			<!-- close if -->
+		<% end %>
+		<!-- close each -->
+	<% end %>
+</section>
+
+
+

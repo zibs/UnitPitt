@@ -1,0 +1,57 @@
+<% provide(:title, 'Directory::2055Project') %>
+<% provide(:html_class, 'directory') %>
+<% provide(:container_class, 'container-fluid directory') %>
+
+<section class="timeline">
+
+<h2>Timeline</h2>
+
+
+	
+</section>
+
+ 
+<%= render "sankey" %>
+<div id="sankey_multiple" style="width: 300px; height: 300px;"></div>
+
+
+
+
+<!--//
+sdsd
+
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["sankey"]});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+
+        data.addRows([
+          [ '1988 Artist Exhibition', 'X', 5 ],
+          [ 'A', 'Y', 7 ],
+          [ 'A', 'Z', 6 ],
+          [ 'B', 'X', 2 ],
+          [ 'B', 'Y', 9 ],
+          [ 'B', 'Z', 4 ]
+        ]);
+
+        // Sets chart options.
+        var options = {
+          width: 600,
+
+        };
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<div id="sankey_basic" style="width: 900px; height: 300px;"></div>
+
+ -->

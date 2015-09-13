@@ -1,0 +1,196 @@
+// Place all the styles related to the Contributors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Contributors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@mixin box_sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+// NAVBAR
+body > nav > div > div.navbar-header > a.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    letter-spacing: 4px;
+    margin-right: 2em;  
+}
+.logo {
+    margin: 0 0.5em;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+}
+// add underline to navbar + color
+#bs-example-navbar-collapse-1 > ul:nth-child(1) {
+    width: 50%;
+    > li > a {
+        color: white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#bs-example-navbar-collapse-1 > ul:nth-child(1) > li:nth-child(1) {
+    margin-right: 0%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.active-section {
+    background-color: #090909;
+    border-radius: 5px;
+    
+}
+
+// BEGIN BODY
+main.container-fluid {
+    margin: 0 5%;
+    height: 100vh;
+}
+
+section.row {
+    position: relative;
+}
+
+section.contributors {
+    position: relative;
+    margin-top: 8vh;
+}
+
+section.row > section.welcome {
+    position: relative;
+    margin-top: 17vh;
+    padding-left: 6%;
+}
+
+// LINKS IN WELCOME 
+    body > main > section > section.welcome.col-md-8.col-md-offset-1 > h4:nth-child(3) > a {
+    color: black;
+    font-weight: bold;
+
+    
+}
+section.contributors > h4.contributor-title {
+    color: grey;
+    
+}
+section.contributors > p {
+    display: block;
+
+}
+
+.current_contributor {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.contributors a {
+    color: black;
+}
+
+body > main > section:nth-child(1) > section.contributors.col-md-3 > a > p {
+    display: block;
+    font-family: 'Cousine', sans-serif;
+}
+
+// SEARCH
+section.searchbar {
+    position: absolute;
+    margin-top: 2.5vh;
+    .searchfield {
+        border: 2px solid black;
+        padding: 0.25em;
+        border-radius: 4px;
+    }
+    .submit-btn {
+        background: rgba(28, 255, 0, 0.3);
+        color: black;
+        border: 2px solid black;
+        padding: 0.25em 0.75em;
+        border-radius: 4px;
+        margin-left: 2em;
+    }
+}
+
+// AUTHOR TITLE
+body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-offset-1 > section:nth-child(1) > p {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 1.5em;
+    color: grey;
+}
+
+.book-display {
+    margin-bottom: 1em;
+    font-size: 1.25em;
+}
+.book_author { 
+
+ 
+}
+.book_title {
+    
+}
+
+// POSITION BOOKS
+body > main > section:nth-child(1) > section.contributors_books {
+    position: relative;
+    top: 15vh;
+}
+
+
+.bio {
+    margin-top: 15%;
+}
+
+// BIO POSITIONING
+// body > main > section:nth-child(2) > article.bio {
+    // margin-top: 5%;
+    // font-size: 1.25em;
+    // text-align: justify;
+// }
+
+// AUTHORS
+.author-display {
+    margin-top:10vh;
+    height: 70vh;
+    // background-color: teal;
+}
+// TITLE PAGE
+.title-display {
+    margin-top:10vh;
+    height: 70vh;
+}
+.author-display > h3 {
+
+}
+
+// AUTHORS
+.author-group {
+    ul {
+        margin-bottom: 2%;
+    }
+    li {
+        display: inline-block;
+    }
+}
+
+.title-group {
+    ul {
+        margin-bottom: 2%;
+    }
+    li {
+        display: inline-block;
+    }
+}

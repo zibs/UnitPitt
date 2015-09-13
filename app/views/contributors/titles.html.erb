@@ -1,0 +1,12 @@
+<%= render 'navbar' %>
+<section class="row title-display">
+	<% @titles.each do |title_group|%>
+		<section class="row title-group">
+				<ul>
+					<% title_group.each do |title| %>
+						<li class ="col-md-2 titles"><%= title.join %></li>
+					<% end %>
+				</ul>
+		</section>
+	<% end %>
+</section>
