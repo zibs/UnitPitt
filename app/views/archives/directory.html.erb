@@ -1,18 +1,81 @@
 <% provide(:title, 'Directory::2055Project') %>
 <% provide(:html_class, 'directory') %>
 <% provide(:container_class, 'container-fluid directory') %>
-
-<section class="timeline">
-
-<h2>Timeline</h2>
-
-
-	
+<section class="row">
+  <h1 class="text-center">
+    2055
+  </h1>
+</section>
+<section class="row">
+  <h4 class="text-center">
+  MUSIK KLUB: TV Party Edition - Jamie Ward    <br> Sept 3rd - ongoing
+  </h4>
 </section>
 
+<section class="row">
+  <h4 class="text-center">
+    It's a Long Way From the Wishbone to the Backbone <br>
+     Joël Doyle. Curated by Zebulon Zang <br>
+     Sept  11 - October 14th, 2015  
+  </h4>
+</section>
+
+<section class="row">
+  <h4 class="text-center">
+    <%= link_to "Limited Time Library", contributors_path, class: "exhibition-link" %> <br>
+    Co-curated by Abbey Hopkins and Catherine de Montreuil <br>
+    October 4th - November 15th, 2015
+  </h4>
+</section>
+
+
+<article class="row">
+  <h3 class="text-center archive">
+    ARCHIVE
+</h3>
+
+<section class="rotatimg center-block">
+<%= link_to image_tag("#{@artifact.image}", alt: "#{@artifact.alt}", class: "img-responsive"), 
+  @artifact.path , data: { no_turbolink: true }, class: "archive-link"%>
+  </section>
+</article>
+
+<section class="swap-images">
+
+  <%@artifacts.each do |artifact| %>
+
+    <%= link_to image_tag("#{artifact.image}", alt: "#{artifact.alt}", class: "img-responsive"), 
+    artifact.path, data: { no_turbolink: true }, class: "archive-link"%>
+
+  <% end %>
+
+</section>
+
+
+
+<!-- <img src="/assets/sevensins_envy.png" alt=""> -->
+
+<section class="row">
+  <h1 class="text-center">
+    PROJECT
+  </h1>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- <section class="timeline"> -->
+<!-- <h2>Timeline</h2> -->
+<!-- </section> -->
+
  
-<%= render "sankey" %>
-<div id="sankey_multiple" style="width: 300px; height: 300px;"></div>
+
+
 
 
 

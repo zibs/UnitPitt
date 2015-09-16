@@ -238,14 +238,24 @@ DIRECTORY DIRECOTRY!!!!
 html.directory > body {
     position: relative
 }
-section.timeline {
-    position: absolute;
+// section.timeline {
+    // position: absolute;
     // background-color: red;
-    top: 10%;
-    height: 45%;
-    width: 20%;
+    // top: 10%;
+    // height: 45%;
+    // width: 20%;
+// }
+
+.rotatimg {
+    cursor: pointer;
+    max-width: 400px;
+    margin-bottom: 3%;
+    max-height:600px;
 }
 
+.swap-images {
+    display: none;
+}
 
 
 // html.directory {
@@ -298,7 +308,7 @@ html.boringart {
     cursor: pointer;
     /*width: 110%;*/
     /*height: 110%;*/
-    background-image: image-url("assets/boringart.jpg");
+    background-image: image-url("boringart.jpg");
     background-size: 300%;
     z-index: 2;
     background-position: 50% 40%;
@@ -400,7 +410,7 @@ html.crucifixation > body {
     padding: 0;
 }
 
-html.crucifixation > body > .crucificymebaby {
+html.crucifixation > body > main > .crucificymebaby {
     width: 100%;
 }
 
@@ -899,7 +909,7 @@ html.ultralottery > body > main > section.secretartshow > img {
     }
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
-        font-size: 2.5em;
+        font-size: 3.5em;
         word-wrap: break-word;
     }
     .navigation h1 {
@@ -917,7 +927,7 @@ html.ultralottery > body > main > section.secretartshow > img {
 @media only screen and (max-width: 1200px) {
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
-        font-size: 2.5em;
+        font-size: 3.5em;
         word-wrap: break-word;
     }
     .navigation h1 {
@@ -936,11 +946,11 @@ html.ultralottery > body > main > section.secretartshow > img {
     }
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
-        font-size: 2.5em;
+        font-size: 3.5em;
         word-wrap: break-word;
     }
     .navigation h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .navigation h5 {
         font-size: 1em;

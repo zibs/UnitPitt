@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
    root 'archives#index'
    # Begin Library
-   resources :contributors
+   resources :contributors, :path => "library"
+   # contributors#index
       get 'authors' => 'contributors#authors'
       get 'titles'  => 'contributors#titles'
    # Begin Archive

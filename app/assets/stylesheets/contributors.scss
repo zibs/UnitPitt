@@ -92,7 +92,10 @@ section.contributors > p {
 
 .current_contributor {
     font-weight: bolder;
-    text-decoration: underline;
+    background-color: black;
+    color: white;
+    padding: 0.25em 0.75em;
+    display: inline-block !important;
 }
 
 .contributors a {

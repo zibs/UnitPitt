@@ -4,9 +4,9 @@
 	<% current_contributor = @contributor %>
 		<% @contributors.each do |contributor| %>
 		<% if current_contributor == contributor %>
-				<p class = "current_contributor">
+				<p class = "current_contributor"><b>
 					<%= current_contributor.name%>
-				</p>
+				</b></p>
 		<% else %>
 				<%= link_to(contributor) do %>
 				<p><%= contributor.name %></p>

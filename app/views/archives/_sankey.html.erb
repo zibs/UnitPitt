@@ -11,7 +11,7 @@ google.setOnLoadCallback(drawChart);
     data.addColumn('string', 'From');
     data.addColumn('string', 'To');
     data.addColumn('number', 'Weight');
-    data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}})
+    data.addColumn({'type': 'string', 'role': 'tooltip'})
 
     data.addRows([
        [ 'Brazil', 'Portugal', 1, "more text man enjoy it" ],
@@ -61,8 +61,7 @@ google.setOnLoadCallback(drawChart);
        [ 'Morocco', 'May 15th, 8pm', 1, "some arbirary text"],
        [ 'Morocco', 'Japan', 3, "some arbirary text" ]
     ]);
-	  var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
-                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+	  var colors = ['#000000'];
 
     var width  = ($(window).width() - 400);
     var height = ($(window).height() * 4)
@@ -71,15 +70,15 @@ google.setOnLoadCallback(drawChart);
       width: width,
       focusTarget: 'category',
       height: height,
-      tooltip: { isHtml: true },
+      
       sankey: {
-      	node: { colors: colors,
+      	node: { color: colors,
       			label: {},
-      			width: 5,
+      			width: 0,
       			nodePadding: 55,
       			interactivity: true
       			 },
-      	link: { colorMode: 'gradient', colors: colors
+      	link: { colorMode: 'none', colors 
       	}
       }
     };
