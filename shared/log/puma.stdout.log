@@ -10,3 +10,6 @@
 [6656] - Gracefully shutting down workers...
 [6656] === puma shutdown: 2015-09-19 09:16:56 -0700 ===
 [6656] - Goodbye!
+=== puma startup: 2015-09-19 11:53:44 -0700 ===
+[10570] * Starting control server on unix:///tmp/puma-status-1442688824380-10565
+[10570] - Worker 0 (pid: 10578) booted, phase: 0
