@@ -5,13 +5,19 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
    root 'archives#index'
+
    # Begin Library
    resources :contributors, :path => "library"
-   # contributors#index
-      get 'authors' => 'contributors#authors'
-      get 'titles'  => 'contributors#titles'
+   get 'authors' => 'contributors#authors'
+   get 'titles'  => 'contributors#titles'
+
+   # Begin Exhbitions
+   get 'musikklub' =>  'archives#musikklub'
+   get 'musikklub-sidetwo' => 'archives#musikklubsidetwo'
+
    # Begin Archive
    get 'directory' => 'archives#directory'
+   get 'acknowledgments' => 'archives#acknowledgments'
    get 'OutlawArtistsAtThePitt' => 'archives#outlaws'
    get 'Elaine-Brewer-White-Seven-Sins-and-the-Television-Set' => 'archives#sevensins'
    get 'For Immediate Release' => 'archives#pictographs'

@@ -1,4 +1,96 @@
 
+
+
+
+
+
+// ORAF 
+
+// $(document).ready(function(){
+// $('.ultralotto').draggable()  
+// });
+
+
+$(document).ready(function() {
+    setInterval(function() {
+        $(".ultralotto").effect("pulsate", {
+            times: 3
+        }, 500)
+
+    }, 5000);
+});
+
+
+<!-- <section class="timeline"> -->
+<!-- <h2>Timeline</h2> -->
+<!-- </section> -->
+
+ 
+
+
+
+
+
+
+
+// ORAF 
+
+// $(document).ready(function(){
+// $('.ultralotto').draggable()  
+// });
+
+
+$(document).ready(function() {
+    setInterval(function() {
+        $(".ultralotto").effect("pulsate", {
+            times: 3
+        }, 500)
+
+    }, 5000);
+});
+
+
+
+
+
+<!--//
+sdsd
+
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["sankey"]});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+
+        data.addRows([
+          [ '1988 Artist Exhibition', 'X', 5 ],
+          [ 'A', 'Y', 7 ],
+          [ 'A', 'Z', 6 ],
+          [ 'B', 'X', 2 ],
+          [ 'B', 'Y', 9 ],
+          [ 'B', 'Z', 4 ]
+        ]);
+
+        // Sets chart options.
+        var options = {
+          width: 600,
+
+        };
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<div id="sankey_basic" style="width: 900px; height: 300px;"></div>
+
+ -->
 //
 $(document).ready(function() {
     setTimeout(function(){
@@ -123,3 +215,69 @@ html.ultralottery > body > main > section.ultralotto {
         -moz-animation: movetheotherorafagain 1.5s infinite alternate;
         animation: movetheotherorafagain 1.5s infinite alternate;
     }
+
+        @determined_number = rand(1..7)
+    generate_front_page_image(@determined_number)
+    @archive_path = match_link_path(@determined_number)# 
+    def generate_front_page_image(det_number)
+        @front_page_image  = "front_page_#{det_number}.png"     
+    end
+
+    def match_link_path(det_number)
+                    @archive_path = case det_number
+                    when 1  then "IngridKoenigs-RapOnTheSublime"
+                    when 2  then  "AsIfCompositionWereaDogandNotaGod"
+                    when 3  then "Elaine-Brewer-White-Seven-Sins-and-the-Television-Set"
+                    when 4  then "AndAfterwardsJesusHimselfSentOutThroughThemFromEastToWestTheSacredAndImperishableProclamationOfEternalSalvation"
+                    when 5  then "LookUponMyWorksYeMightyAndDespair"    
+                    when 6  then "For Immediate Release"
+                    when 7  then "OutlawArtistsAtThePitt"
+
+                    else "root_path"
+                end
+    end
+    def match_alt_tag(det_number)
+        @alt_tag = case det_number
+                    when 1  then "Absolutely sublime my dear"
+                    when 2 then  "As if, my friend, as if."
+                    when 3  then "The Seven Sins and the Televsion"
+                    when 4  then "And Afterwards Jesus Himself Sent Out Through Them From East To West The Sacred And Imperishable Proclamation Of Eternal Salvation!"
+                    when 5  then "Look Upon My Works Ye Mighty And Despair" 
+                    when 6  then "For Immmmmmmmmmmmmediate Release"
+                    when 7  then "Bound to be a hit!"
+                    else "No alt tag available, sorry :("
+                end
+            end
+            // html.directory {
+// background: image-url("map_artistruncenters_1988.jpg") no-repeat center center fixed;
+// -webkit-background-size: contain;
+// -moz-background-size: contain;
+// -o-background-size: contain;
+// background-size: contain;
+// }
+// html.directory > body {
+// background: none;
+// overflow-x: hidden;
+// }
+// html.directory > body > main.container-fluid {
+// margin: 0;
+// position: relative;
+// }
+// .artist-centers-1988 {
+// width: 100%;
+// height: auto;   
+// }
+section.exhibition-wrapper {
+    position: fixed;
+    display: inline-block;
+    top: 20%;
+    right: 30%;
+    height: 2vh;
+    width: 2%;
+    background-color: orange;
+    > section.exhibition-timeline {
+        position: fixed;
+        // height: 90%;
+        background-color: yellow;
+    }
+}
