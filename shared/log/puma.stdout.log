@@ -13,3 +13,8 @@
 === puma startup: 2015-09-19 11:53:44 -0700 ===
 [10570] * Starting control server on unix:///tmp/puma-status-1442688824380-10565
 [10570] - Worker 0 (pid: 10578) booted, phase: 0
+[10578] ! Detected parent died, dying
+=== puma startup: 2015-09-19 13:00:36 -0700 ===
+[11163] * Starting control server on unix:///tmp/puma-status-1442692836630-11158
+[11163] - Worker 0 (pid: 11170) booted, phase: 0
+[11170] ! Detected parent died, dying

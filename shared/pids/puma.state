@@ -1,5 +1,5 @@
 ---
-pid: 10570
+pid: 11163
 config: !ruby/object:Puma::Configuration
   cli_options: 
   conf: 
@@ -22,9 +22,9 @@ config: !ruby/object:Puma::Configuration
     :redirect_append: true
     :pidfile: "/home/raworth/project2055/shared/pids/puma.pid"
     :state: "/home/raworth/project2055/shared/pids/puma.state"
-    :control_url: unix:///tmp/puma-status-1442688824380-10565
+    :control_url: unix:///tmp/puma-status-1442692836630-11158
     :worker_directory: "/home/raworth/project2055"
     :config_file: config/puma.rb
-    :control_url_temp: "/tmp/puma-status-1442688824380-10565"
-    :control_auth_token: 881931904174b2977389586479cd2010
+    :control_url_temp: "/tmp/puma-status-1442692836630-11158"
+    :control_auth_token: c67cb5728522dca6d962d398f7df04e
     :tag: project2055
