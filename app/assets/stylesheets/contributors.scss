@@ -12,7 +12,7 @@
     -box-sizing: border-box;
 }
 
-body {
+html.library > body {
     font-family: 'Open Sans', sans-serif;
 }
 // NAVBAR
@@ -22,6 +22,7 @@ body > nav > div > div.navbar-header > a.navbar-brand {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
     letter-spacing: 4px;
     margin-right: 2em;  
+    font-family: "Lato"
 }
 .logo {
     margin: 0 0.5em;
@@ -34,6 +35,7 @@ body > nav > div > div.navbar-header > a.navbar-brand {
     width: 50%;
     > li > a {
         color: white;
+          font-family: "Lato";    
         &:hover {
             text-decoration: underline;
         }
@@ -46,6 +48,7 @@ body > nav > div > div.navbar-header > a.navbar-brand {
 
 .navbar-inverse .navbar-nav > li > a {
     color: white;
+      font-family: "Lato";
 }
 .active-section {
     background-color: #090909;
@@ -68,10 +71,19 @@ section.contributors {
     margin-top: 8vh;
 }
 
+
+
 section.row > section.welcome {
     position: relative;
     margin-top: 17vh;
     padding-left: 6%;
+}
+
+// Image
+.librarypage-logo {
+    max-height: 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 // LINKS IN WELCOME 

@@ -1,0 +1,26 @@
+<% provide(:html_class, "acknowledgments_page") %>
+<% provide(:title, 'Acknowledgments') %>
+<% provide(:container_class, "container") %>
+
+<section class="row">
+	<section class="acknowledgment-text col-md-8 col-md-offset-2">
+		<h4><a href="http://www.helenpittgallery.org/"><b>UNIT/PITT</b></a> is grateful for the assistance of the <b>Canada Council</b>, the <b>British Columbia Arts Council</b>, and the <b>City of Vancouver</b>; we are particularly grateful to individual donors, volunteers, artists, and cultural workers, without whom we would be unable to continue.
+		</h4>
+	</section>
+</section>
+<section class="row">
+	<section class="col-md-8 col-md-offset-2 acknowledgment-images">
+	<%= image_tag("CCFA_logo.jpg", alt: "Canada Council for the Arts -  Conseil des Arts du Canada") %> <br>
+	<%= image_tag("BCAC_logo.png", alt: "British Columbia Arts Council" )%> <br>
+	<%= image_tag("CoV_logo.png", alt: "City of Vancouver") %>
+	</section>
+</section>
+
+<section class="row">
+	
+	<h5 class ="acknowledge-return col-md-8 col-md-offset-2 text-center">
+		<%= link_to "back to 2055project.website", root_path, data: { no_turbolink: true } %></h5>
+</section>
+
+
+

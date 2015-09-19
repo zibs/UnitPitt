@@ -4,6 +4,8 @@ module ApplicationHelper
   		current_page?(link_path) ? "active-section" : ""
   end
 
+
+
  	
  	 # Returns the full title on a per-page basis.
   def full_title(page_title = '')
@@ -15,7 +17,7 @@ module ApplicationHelper
     end
   end
 
-
+# CLASS AND DATA HELPERS
   def html_class(html_class='')
   	if html_class.empty?
   		html_class
@@ -30,6 +32,23 @@ module ApplicationHelper
     else
       "#{container_class}"
     end
+  end
+
+  def styles(styles= '')
+    if styles.empty?
+      styles
+    else
+      "#{styles}"
+
+    end
+  end
+
+  def body_data(data='')
+    if data.empty?
+      data
+    else
+      "#{data}"
+    end 
   end
 
 

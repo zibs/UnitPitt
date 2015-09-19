@@ -1,4 +1,10 @@
+<% provide(:container_class, 'container-fluid') %>
 <%= render 'navbar' %>
+<section class="row">
+	<section class="announce-authors text-center">
+		<h1>Authors</h1>
+	</section>
+</section>
 <section class="row author-display">
 	<% @authors.each do |author_group|%>
 		<section class="row author-group">

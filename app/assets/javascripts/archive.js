@@ -15,6 +15,8 @@ $(document).ready(function() {
     // });
 });
 
+// var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
 
 // Directory Javascripts
 
@@ -24,33 +26,57 @@ $(document).ready(function() {
 // to do so I will need to create a association between IMAGELINKPAGE
 // this association will then be switched upon hovering. 
 
-
-
-
-// .attr("src");
-    
-
-
-
-
 $(document).ready(function() {
-    var image_wrapper = document.getElementsByClassName("swap-images")
-    var images = $(image_wrapper).children();
+    // Load up Image Links
+    var imageLinkWrapper = document.getElementsByClassName("swap-images")
+    var imageLinks        = $(imageLinkWrapper).children();
 
     $(".archive-link").hover(function() {
-        var random_image = images[(Math.floor(Math.random() * 8))]
+        // With EACH HOVER get the MAIN imagelink
+        var mainLinkWrapper = document.getElementsByClassName("rotatimg")
+        var mainLink        = $(mainLinkWrapper).children()[0];
+        var mainImage       = mainLink.children[0]
 
+        // GET THE RANDOM ATTRS
+        var randomImageLink = imageLinks[(Math.floor(Math.random() * 7))]
+        var random_href     = randomImageLink.href
+        var random_alt      = randomImageLink.children[0].alt
+        var random_src      = randomImageLink.children[0].src
+
+        // SWITCH THEM
+        $(mainLink).attr( { alt: random_alt, href: random_href} )
+        $(mainImage).attr( { src: random_src, alt: random_alt}  )
+        // yahoo :)
     });
 });
 
 
+$(document).ready(function() {
+    $("#musikklub_poster").hover(function() {
+         $("#musikklub_poster_link").fadeToggle("fast");
+    });
+
+    $("#wishbone_poster").hover(function() {
+         $("#wishbone_poster_link").fadeToggle("fast");
+    });
+
+    $("#library_poster").hover(function() {
+         $("#library_poster_link").fadeToggle("fast");
+    });
+
+     $("#archive_posters").hover(function() {
+         $("#archive_posters_link").fadeToggle("fast");
+    });
+
+
+}); 
 
 
 
 
-
-
-
+// JAMIE
+// var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+// var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 
 
 
@@ -100,33 +126,6 @@ $(document).ready(function() {
     });
 });
 
-
-
-
-$(document).ready(function() {
-    $(".outlaw-image").click(function() {
-        $(this).css({
-            "display": "none"
-        });
-    })
-});
-
-
-// ORAF 
-
-// $(document).ready(function(){
-// $('.ultralotto').draggable()  
-// });
-
-
-$(document).ready(function() {
-    setInterval(function() {
-        $(".ultralotto").effect("pulsate", {
-            times: 3
-        }, 500)
-
-    }, 5000);
-});
 
 
 

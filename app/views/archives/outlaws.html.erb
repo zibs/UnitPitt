@@ -1,9 +1,9 @@
 <% provide(:title, '2055 Project') %>
 <% provide(:html_class, 'outlaws') %>
-<section class="outlaw-content" style = "display:none">
-    
+<%= render "archive_nav" %>
 
-<%= image_tag("outlawart.jpg", alt: "Outlaw Artists at the Pitt Exhibition") %>
+<section class="outlaw-content" style = "display:none">
+<%= image_tag("outlawart.jpg",  alt: "Outlaw Artists at the Pitt Exhibition") %>
 
 <%= image_tag("outlawart6.jpg", alt: "Outlaw Artists at the Pitt Exhibition", class: "outlaw-image" ) %>
 <%= image_tag("outlawart5.jpg", alt: "Outlaw Artists at the Pitt Exhibition", class: "outlaw-image" ) %>
@@ -13,12 +13,11 @@
 <%= image_tag("outlawart2.jpg", alt: "Outlaw Artists at the Pitt Exhibition", class: "outlaw-image" ) %>
 <%= image_tag("outlawart1.jpg", alt: "Outlaw Artists at the Pitt Exhibition", class: "outlaw-image" ) %>
 </section>
-<script>
 
+<script type="text/javascript">
 $(document).ready(function() {
     $(".outlaw-content").fadeIn();
 });
-
 $(document).ready(function() {
     $(".outlaw-image").click(function() {
         $(this).css({"display":"none"})

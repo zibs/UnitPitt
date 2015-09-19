@@ -1,4 +1,10 @@
 <%= render 'navbar' %>
+<% provide(:container_class, 'container-fluid') %>
+
+<section class="row">
+	<section class="announce-title text-center">
+		<h1>Titles</h1>
+	</section>
 <section class="row title-display">
 	<% @titles.each do |title_group|%>
 		<section class="row title-group">

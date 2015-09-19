@@ -4,9 +4,10 @@
 	<%= render 'contributors/contributors' %>
 	<!-- Display Welcome Message! -->
 	<section class="welcome col-md-8 col-md-offset-1">
-		<h1><em><b>Welcome to the <span class = "logo">Limited Time Library</span> Database!</b></em></h1>
+		<%= image_tag("librarylogosimple.jpg", alt: "Limited Time Library Logo", class: "librarypage-logo img-responsive center-block") %>
+		<h1><em><b>Welcome to the <span class = "">Limited Time Library</span> Database!</b></em></h1>
 		<br>
-		<h4>Please browse by <%= link_to 'contributor', root_path %>, <%= link_to 'author', authors_path %>, <%= link_to 'title', titles_path %>, or keyword search.</h5>
+		<h4>Please browse by <%= link_to 'contributor', contributors_path %>, <%= link_to 'author', authors_path %>, <%= link_to 'title', titles_path %>, or keyword search.</h5>
 
 		<br>
 		
@@ -15,7 +16,7 @@
 		<h4>Thursday-Friday 12pm-5pm</h4>
 
 		<br>
-		<h3>October 1st - November 12th, 2015</h3>
+		<h3>October 4th - November 15th, 2015</h3>
 
 		<br>
 

@@ -1,22 +1,15 @@
 <% provide(:title, '2055 Project') %>
-<% provide(:html_class, 'working') %>
-<% provide(:container_class, "container") %>
-        <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Bonbon' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'> 
-    <section class="benjamin-speaks row">
+<% provide(:html_class, 'library') %>
+<% provide(:container_class, "") %>
+
+
+
+<%= render "google_fonts" %> 
+
+<section class="intro-wrapper" data-2500="background-color:white;" data-3000="background-color:black;">
+<article data-0="transform:scale(1);" data-3000="transform:scale(5.0);" data-3001="opacity:1;position:fixed;" data-3500="opacity:0;position:absolute;" class="introduction">
+
+    <section data-0="transform:rotate(-23deg) translate(75px,100px)" data-1500="transform:translate(-1deg) translate(200px,200px);" class="benjamin-speaks row">
             <article class = "col-md-8 col-sm-8 col-xs-8">
                 <h1><span class="greyq">“</span>Increasin<span id ="updown-g">g</span>ly&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthe </h1>
                 <h1>object of an exhibition </h1>
@@ -28,7 +21,31 @@
         <section class="row navigation">
             <article class="colo col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7">
                 <h1 class ="project-font">2055 PROJECT</h1>
-                <h5 class = "text-muted"> <%= link_to "Enter Site", directory_path %></h5>
-                <h2 class = "unit-font"><a href="http://www.helenpittgallery.org/">UNIT/PITT</a></h2>
+                <h2 class = "unit-font">
+                    <a href="http://www.helenpittgallery.org/">UNIT/PITT</a>
+                </h2>
+                <h2 class = "acknowledgments">
+                    <%= link_to "Acknowledgments", acknowledgments_path, data: { no_turbolink: true } %>
+                </h2>
             </article>
         </section>
+
+</article>
+</section> 
+
+<article data-3500="opacity:0;position:relative;" data-4000="opacity:1; position:fixed;" class="directory-wrap">
+<%= render "exhibitions" %>
+</article>
+
+
+<script type="text/javascript">
+$(function() {
+    skrollr.init();
+});
+$(document).on('page:load', function () {
+skrollr.init().refresh(); 
+});
+</script>
+
+
+

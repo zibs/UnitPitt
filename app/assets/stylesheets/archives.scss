@@ -135,36 +135,63 @@ textarea {
 
 
 /* ==========================================================================
-   2055 Project
+   2055 Project INDEX
    ========================================================================== */
 
 html {
-    /*padding: 2em;*/
     position: relative;
-    height: 100%;
-    /*overflow-y: hidden;*/
+    // height: 100%;
 }
 
 body {
     position: relative;
     height: 100%;
-    /*background-color: red;*/
 }
+
+html.project2055 {
+    background-color: white;
+}
+
+html.project2055 > body {
+    // height: 5200px;
+    background-color: white;
+}
+
+section.intro-wrapper {
+    position: relative;
+}
+
+article.introduction {
+    background-color: black;
+    height: 90vh;
+    width: 95%;
+    color: white;
+    margin: 2.5%;
+    position: fixed;
+}
+
 
 .container {
     position: relative;
     bottom: 2%;
 }
 
-.benjamin-speaks {
+.navarchive {
+    position: fixed;
+    left: 0.5%;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.row.benjamin-speaks {
+    // margin-top: 0;
     text-align: center;
-    transform: rotate(-23deg);
 }
 
 .benjamin-speaks h1 {
     font-family: "Noto-Serif";
     word-wrap: break-word;
-    display: inline-block;
+    display: block;
     font-size: 3.5em;
 }
 
@@ -188,6 +215,9 @@ body {
     text-align: center;
     margin-left: 30%;
     margin-bottom: 10px;
+    margin-top: 25%;
+    padding-bottom: 1em;
+    color: white;
 }
 
 .navigation h1 {
@@ -203,7 +233,7 @@ body {
 }
 
 .navigation a {
-    color: black;
+    color: white;
 }
 
 .navigation a:link {
@@ -216,7 +246,7 @@ body {
 
 .navigation a:hover {
     text-decoration: underline;
-    color: black;
+    color: white;
 }
 
 .navigation a:active {
@@ -227,77 +257,185 @@ body {
     font-family: "UPP-Sans-Bold";
 }
 
-.project-font {}
+.acknowledgments a {
+    font-size: 0.75em;
+}
 
+// ACKNOWLEDGMENTS
+.acknowledgment-text {
+    margin-top: 25%;
+    margin-bottom: 5%;
+    font-family: "Lato";
+    word-wrap: break-word;
+    h4 {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    a {
+        color: black;
+        font-size: 1em;
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+}
+
+.acknowledgment-images img {
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.acknowledge-return {
+    margin-top: 10%;
+    a {
+        color: black;
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+}
 
 
 
 /* ==========================================================================
 DIRECTORY DIRECOTRY!!!!
    ========================================================================== */
-html.directory > body {
-    position: relative
+
+.directory-wrap {
+    // bottom: 20px;
+    left: 15px;
+    width: 95%;
+    background-color: white;
+    color: black;
 }
-// section.timeline {
-    // position: absolute;
-    // background-color: red;
-    // top: 10%;
-    // height: 45%;
-    // width: 20%;
-// }
+
+.exhbitimage {
+    max-height: 220px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.exhibition {
+    font-family: "Lato";
+    margin-top: 25%;
+    background-color: white;
+    margin-bottom: 2%;
+    // border: 4px solid black;
+    h4 {
+        margin: 0;
+    }
+    a {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 0.75em;
+        text-align: center;
+        &:hover {
+            color: black;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+}
+
+#musikklub_poster_link {
+    display: none;
+}
+
+#wishbone_poster_link {
+    display: none;
+}
+
+#library_poster_link {
+    display: none;
+}
+
+#archive_posters_link {
+    display: none;
+}
+
+.archive {
+    margin-top: 10%;
+}
+
+.archive-logo {
+    color: black;
+    font-weight: bold;
+    font-family: "Lato";
+}
 
 .rotatimg {
     cursor: pointer;
     max-width: 400px;
     margin-bottom: 3%;
-    max-height:600px;
+    max-height: 600px;
+}
+
+.frontpageimage {
+    max-height: 220px;
 }
 
 .swap-images {
     display: none;
 }
 
-
-// html.directory {
-    // background: image-url("map_artistruncenters_1988.jpg") no-repeat center center fixed;
-    // -webkit-background-size: contain;
-    // -moz-background-size: contain;
-    // -o-background-size: contain;
-    // background-size: contain;
-// }
-
-// html.directory > body {
-    // background: none;
-    // overflow-x: hidden;
-// }
-// html.directory > body > main.container-fluid {
-    // margin: 0;
-    // position: relative;
-// }
-// .artist-centers-1988 {
-    // width: 100%;
-    // height: auto;   
-// }
-
-
-section.exhibition-wrapper {
+.TBA {
     position: fixed;
-    display: inline-block;
-    top:20%;
-    right:30%;
-    height: 2vh;
-    width:2%;
-    background-color: orange;
-    > section.exhibition-timeline {
-        position: fixed;
-        // height: 90%;
-        background-color: yellow;
-    }
+    bottom: 0;
+    right: 0;
 }
 
 
+/* ==========================================================================
+MUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUBMUSIKKLUB
+ ========================================================================== */
 
+html.musikklub {
+    background-color: black;
+    > body {
+        background-color: black;
+    }
+    .fliptape {
+        position: relative;
+        display: inline-block;
+        top: 1vh;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 1vh;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
 
+.video-wrapper {
+    position: relative;
+    padding-bottom: 33.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
 
 
 /* ==========================================================================
@@ -328,7 +466,9 @@ html.boringart > body {
 OUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWSOUTLAWS
    ========================================================================== */
 
-html.outlaws {}
+html.outlaws {
+    height: 100%;
+}
 
 html.outlaws > body {
     position: initial;
@@ -615,6 +755,7 @@ html.ultralottery > body {
         right: 85%;
     }
 }
+
 @-webkit-keyframes twodia {
     from {
         right: 50%;
@@ -625,6 +766,7 @@ html.ultralottery > body {
         right: 80%;
     }
 }
+
 @-webkit-keyframes threedia {
     from {
         right: 100%;
@@ -635,6 +777,7 @@ html.ultralottery > body {
         right: 95%;
     }
 }
+
 @-webkit-keyframes fourdia {
     from {
         right: 15%;
@@ -645,6 +788,7 @@ html.ultralottery > body {
         right: 85%;
     }
 }
+
 @-webkit-keyframes fivedia {
     from {
         right: 15%;
@@ -655,6 +799,7 @@ html.ultralottery > body {
         right: 85%;
     }
 }
+
 @-webkit-keyframes sixdia {
     from {
         right: 15%;
@@ -665,7 +810,6 @@ html.ultralottery > body {
         right: 85%;
     }
 }
-
 
 html.ultralottery > body > main > section.littleone >img {
     position: absolute;
@@ -718,12 +862,9 @@ html.ultralottery > body > main > section.littleone >img {
         -moz-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
         -webkit-animation: 7.6s rotateRight infinite linear, onediagonal 3s infinite alternate;
     }
-
 }
 
 // ORAF
-
-
 @-webkit-keyframes movetheotheroraf {
     from {
         right: 5%;
@@ -739,16 +880,12 @@ html.ultralottery > body > main > section.littleone >img {
 html.ultralottery > body > main > section.secretartshow > img {
     position: absolute;
     max-height: 30px;
-      top: 80%;
-        right: 15%;
+    top: 80%;
+    right: 15%;
     -webkit-animation: movetheotheroraf 2s infinite alternate;
     -moz-animation: movetheotheroraf 2s infinite alternate;
     animation: movetheotheroraf 2s infinite alternate;
-   
-  
 }
-
-
 
 
 /*is this the end*/
@@ -902,10 +1039,9 @@ html.ultralottery > body > main > section.secretartshow > img {
    Modify as content requires.
    ========================================================================== */
 
-
 @media only screen and (min-width: 1500px) {
     .benjamin-speaks {
-        margin-top: 15%;
+        // margin-top: 15%;
     }
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
@@ -922,7 +1058,6 @@ html.ultralottery > body > main > section.secretartshow > img {
         font-size: 1.8em;
     }
 }
-
 
 @media only screen and (max-width: 1200px) {
     .benjamin-speaks h1 {
@@ -940,9 +1075,10 @@ html.ultralottery > body > main > section.secretartshow > img {
         font-size: 1.8em;
     }
 }
+
 @media only screen and (min-width: 950px) {
     .benjamin-speaks {
-        margin-top: 10%;
+        // margin-top: 10%;
     }
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
