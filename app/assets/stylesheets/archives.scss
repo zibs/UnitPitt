@@ -170,7 +170,6 @@ article.introduction {
     position: fixed;
 }
 
-
 .container {
     position: relative;
     bottom: 2%;
@@ -300,7 +299,6 @@ article.introduction {
         }
     }
 }
-
 
 
 /* ==========================================================================
@@ -1096,6 +1094,29 @@ html.ultralottery > body > main > section.secretartshow > img {
     }
 }
 
+@media only screen and (max-height: 950px) {
+    .benjamin-speaks {
+        // margin-top: 10%;
+    }
+    .benjamin-speaks h1 {
+        font-family: "Noto-Serif";
+        font-size: 3.5em;
+        word-wrap: break-word;
+    }
+    .navigation h1 {
+        font-size: 2.5em;
+    }
+    .navigation h5 {
+        font-size: 1em;
+    }
+    .navigation h2 {
+        font-size: 1.8em;
+    }
+    .navigation {
+        margin-top: 15%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
@@ -1129,12 +1150,41 @@ html.ultralottery > body > main > section.secretartshow > img {
     .navigation h2 {
         font-size: 0.8em;
     }
+    .navigation {
+        margin-top: 30%;
+    }
+    #musikklub_poster_link {
+        display: initial;
+    }
+    #wishbone_poster_link {
+        display: initial;
+    }
+    #library_poster_link {
+        display: initial;
+    }
+    #archive_posters_link {
+        display: initial;
+    }
+    body > main > article > article > section:nth-child(1) {
+  h4 {
+        font-size: 0.75em;
+    }
+    h3 {
+        font-size: 0.8em
+    }
+  }
+    .exhibition {
+        margin-top: 10%;
+    }
 }
 
 
 /*Iphone 4s*/
 
 @media only screen and (max-width: 330px) {
+    .navigation {
+        margin-top: 30%;
+    }
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
         word-wrap: break-word;

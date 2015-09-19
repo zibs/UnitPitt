@@ -1,30 +1,29 @@
 <%= render 'navbar' %>
+<% provide(:html_class, 'library') %>
 <% provide(:container_class, 'container-fluid') %>
 <section class="row">
 	<%= render 'contributors/contributors' %>
 	<!-- Display Welcome Message! -->
-	<section class="welcome col-md-8 col-md-offset-1">
+	<section class="welcome col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-1 ">
 		<%= image_tag("librarylogosimple.jpg", alt: "Limited Time Library Logo", class: "librarypage-logo img-responsive center-block") %>
 		<h1><em><b>Welcome to the <span class = "">Limited Time Library</span> Database!</b></em></h1>
 		<br>
 		<h4>Please browse by <%= link_to 'contributor', contributors_path %>, <%= link_to 'author', authors_path %>, <%= link_to 'title', titles_path %>, or keyword search.</h5>
-
 		<br>
-		
 		<h4>Limited Time Library Hours:</h5>
 		<h4>Monday-Wednesday 12noon-9pm</h4>
 		<h4>Thursday-Friday 12pm-5pm</h4>
-
 		<br>
 		<h3>October 4th - November 15th, 2015</h3>
-
 		<br>
-
 		<h4>Unit/Pitt Society for Art and Critical Awareness</h4>
 		<h4>236 East Pender Street.</h4>
 		<h4>Vancouver BC.</h4>
 		<%= render 'contributors/search' %>
 	</section>
+
+
+
 
 </section>
 

@@ -15,27 +15,33 @@
 html.library > body {
     font-family: 'Open Sans', sans-serif;
 }
+
 // NAVBAR
 body > nav > div > div.navbar-header > a.navbar-brand {
     color: white;
     font-size: 1.5em;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
     letter-spacing: 4px;
-    margin-right: 2em;  
+    margin-right: 2em;
     font-family: "Lato"
 }
+.navbar-brand {
+    font-style: italic;
+}
+
 .logo {
     margin: 0 0.5em;
     letter-spacing: 2px;
     color: white;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
 }
+
 // add underline to navbar + color
 #bs-example-navbar-collapse-1 > ul:nth-child(1) {
     width: 50%;
     > li > a {
         color: white;
-          font-family: "Lato";    
+        font-family: "Lato";
         &:hover {
             text-decoration: underline;
         }
@@ -48,12 +54,12 @@ body > nav > div > div.navbar-header > a.navbar-brand {
 
 .navbar-inverse .navbar-nav > li > a {
     color: white;
-      font-family: "Lato";
+    font-family: "Lato";
 }
+
 .active-section {
     background-color: #090909;
     border-radius: 5px;
-    
 }
 
 // BEGIN BODY
@@ -71,8 +77,6 @@ section.contributors {
     margin-top: 8vh;
 }
 
-
-
 section.row > section.welcome {
     position: relative;
     margin-top: 17vh;
@@ -81,25 +85,23 @@ section.row > section.welcome {
 
 // Image
 .librarypage-logo {
-    max-height: 300px;
+    max-height: 200px;
     position: relative;
     bottom: 100px;
 }
 
 // LINKS IN WELCOME 
-    body > main > section > section.welcome.col-md-8.col-md-offset-1 > h4:nth-child(3) > a {
+body > main > section > section.welcome.col-md-8.col-md-offset-1 > h4:nth-child(3) > a {
     color: black;
     font-weight: bold;
-
-    
 }
+
 section.contributors > h4.contributor-title {
     color: grey;
-    
 }
+
 section.contributors > p {
     display: block;
-
 }
 
 .current_contributor {
@@ -150,13 +152,10 @@ body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-
     margin-bottom: 1em;
     font-size: 1.25em;
 }
-.book_author { 
 
- 
-}
-.book_title {
-    
-}
+.book_author {}
+
+.book_title {}
 
 // POSITION BOOKS
 body > main > section:nth-child(1) > section.contributors_books {
@@ -164,32 +163,30 @@ body > main > section:nth-child(1) > section.contributors_books {
     top: 15vh;
 }
 
-
 .bio {
     margin-top: 15%;
 }
 
 // BIO POSITIONING
 // body > main > section:nth-child(2) > article.bio {
-    // margin-top: 5%;
-    // font-size: 1.25em;
-    // text-align: justify;
+// margin-top: 5%;
+// font-size: 1.25em;
+// text-align: justify;
 // }
-
 // AUTHORS
 .author-display {
-    margin-top:10vh;
+    margin-top: 10vh;
     height: 70vh;
     // background-color: teal;
 }
+
 // TITLE PAGE
 .title-display {
-    margin-top:10vh;
+    margin-top: 10vh;
     height: 70vh;
 }
-.author-display > h3 {
 
-}
+.author-display > h3 {}
 
 // AUTHORS
 .author-group {
@@ -208,4 +205,50 @@ body > main > section:nth-child(1) > section.contributors_books {
     li {
         display: inline-block;
     }
+}
+
+// @media 
+@media only screen and (max-width: 767px) {
+    .librarypage-logo {
+    max-height: 100px;
+    position: relative;
+    bottom: 0px;
+    }
+    // logo
+    body > nav > div > div.navbar-header > a.navbar-brand {
+         margin-right: 0em;
+    }
+    .welcome {
+        text-align: right;
+    }
+    .welcome h1 {
+        font-size: 22px;
+    }
+    .welcome h4 {
+        font-size: 12px;
+    }
+    .welcome h3 {
+        font-size: 16px;
+    }
+    .hidemobile {
+        // display: none;
+    }
+    .searchbar {
+        left: 35%;
+        .searchfield {
+        width: 60px;
+        }
+    }
+
+    .contributors a {  
+        font-size: 0.75em;
+    }
+    .book-display{
+        font-size: 0.75em;
+    } 
+    body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-offset-1 > section:nth-child(1) > p {
+       color: black;
+       text-decoration: underline;
+       font-size: 1em;
+   }
 }
