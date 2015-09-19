@@ -36,7 +36,6 @@ gem 'skrollr-rails'
 # Use Pume as the app server
 group :produciton do
 gem 'puma'
-gem 'rails_12factor'
 end
 
 # Use Capistrano for deployment

@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-20.times do |contrib|
+5.times do |contrib|
 	name = Faker::Name.name
 	bio = Faker::Lorem.sentence(5)
 	Contributor.create(name: name, bio: bio)
@@ -23,7 +23,6 @@ Contributor.all.each do |contrib|
 
 	end
 end
-
 
 
 
