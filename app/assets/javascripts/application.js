@@ -16,5 +16,5 @@
 //= require jquery-ui
 //= require bootstrap
 //= require skrollr
-//= require turbolinks
+
 //= require_tree .
