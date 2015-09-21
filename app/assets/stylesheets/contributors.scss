@@ -121,7 +121,7 @@ body > main > section:nth-child(1) > section.contributors.col-md-3 > a > p {
     font-family: 'Cousine', sans-serif;
 }
 
-// SEARCH
+// SEARCH BAR
 section.searchbar {
     position: absolute;
     margin-top: 2.5vh;
@@ -139,6 +139,16 @@ section.searchbar {
         margin-left: 2em;
     }
 }
+
+// SEARCH RESULTS
+
+.results-of-search {
+    margin-top: 15%;
+}
+
+.contributor-results {}
+.book-results {}
+.book-result-title-author {}
 
 // AUTHOR TITLE
 body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-offset-1 > section:nth-child(1) > p {
@@ -251,4 +261,8 @@ body > main > section:nth-child(1) > section.contributors_books {
        text-decoration: underline;
        font-size: 1em;
    }
+
+   .results-of-search {
+    margin-top: 15%;
+}
 }

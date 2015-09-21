@@ -1,0 +1,41 @@
+<section class="results-of-search" id = "searchresults">
+<% unless @contributor_results.nil? || @book_results.nil? %>
+<article class="row">
+	<h3><em>Here are the results from your query: </em></h3>
+</article>
+<!-- CONTRIBUTOR RESULTS -->
+<% unless @contributor_results.nil?%>
+	<article class="row contributor-results">
+    	<% @contributor_results.each do | contributor_result | %>	
+        <section class="col-md-8 col-sm-4 col-xs-4"> 
+        <h4><b><%= contributor_result.name	%></b>: </h4>
+        </section><br>
+        <section class="col-md-8 col-sm-4 col-xs-4">
+        	<p><%= contributor_result.bio %></p>
+   		</section>
+		<% end %>
+    </article>
+<% end %>
+
+<!-- BOOK RESULTS -->
+<% unless @book_results.nil? %>
+	<article class="row book-results">
+		<% @book_results.each do |book_result| %>
+		<section class="col-md-8 col-sm-4 col-xs-4 book-result-title-author">
+			<h4><b><%= book_result.title %></b> by <%= book_result.author %></h4>
+			</section>
+		<section class="col-md-4 col-sm-4 col-xs-4">
+			<h4><em><%= book_result.publisher %></em></h4>
+			</section>
+		<br>
+		<section class="col-md-3 col-sm-3 col-xs-3">
+					<h4><%= book_result.genre %></h4>
+			</section>
+		<section class="col-md-3 col-sm-3 col-xs-3">
+					<h4><%= book_result.type %></h4>
+			</section>
+		<% end %>
+	</article>
+<% end %>
+<% end %>
+</section>

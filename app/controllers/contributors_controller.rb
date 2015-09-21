@@ -1,7 +1,18 @@
 class ContributorsController < ApplicationController
 
 	def index
-		@contributors   = Contributor.order("created_at ASC")
+		@contributors        = Contributor.order("created_at ASC")
+		@contributor_results = Contributor.full_search(params[:search]) unless params[:search].nil?
+		@book_results        = Book.full_search(params[:search]) unless params[:search].nil?
+
+		respond_to do |format|
+		    format.html 
+		   	format.js
+		end
+    
+
+
+		
 		# @search_results = Book.text_search(params[:query]).order("created_at DESC")
 	end
 
@@ -13,16 +24,16 @@ class ContributorsController < ApplicationController
 	end
 
 	def authors
-		# returns array of authors
+		# returns array of authors3
 		# @authors = Book.pluck(:author)
 		@authors = Book.pluck(:author).sort_by!{ |m| m.split(" ").reverse.join.upcase }
-		@authors = @authors.zip.in_groups_of(10).transpose
+		@authors = @authors.zip.in_groups_of(4).transpose
 		# @authors = [@authors].transpose.map(&:reverse)
 	end
 
 	def titles
 		# returns array of authors
 		@titles = Book.pluck(:title).sort_by!{ |t| t.downcase }
-		@titles = @titles.zip.in_groups_of(10).transpose
+		@titles = @titles.zip.in_groups_of(4).transpose
 	end
 end

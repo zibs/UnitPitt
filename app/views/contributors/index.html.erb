@@ -20,10 +20,18 @@
 		<h4>236 East Pender Street.</h4>
 		<h4>Vancouver BC.</h4>
 		<%= render 'contributors/search' %>
-	</section>
 
-
-
-
+<div id="search-wrapper">
+	
+<script type="text/javascript">
+$(document).ajaxComplete(function() {
+    $('html, body').animate({
+        scrollTop: $("#searchresults").offset().top
+    }, 1000);
+});
+</script>
+</div>
 </section>
+</section>
+
 

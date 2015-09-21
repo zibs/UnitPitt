@@ -1,7 +1,7 @@
 <section class="searchbar">
-<%= form_tag(contributors_path, :method => "get", id: "search-form", class: "searchform") do %>
+<%= form_tag(contributors_path, :method => "get", remote: true, id: "search_form", class: "searchform") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search the Library", class: "searchfield" %>
-<%= submit_tag "Search", class: "submit-btn", :name => nil %>
+<%= submit_tag "Search", class: "submit-btn", :name => nil, id: "submitsearch" %>
 <% end %>
 </section>		
 
