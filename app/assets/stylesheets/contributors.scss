@@ -151,7 +151,7 @@ section.searchbar {
 .book-result-title-author {}
 
 // AUTHOR TITLE
-body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-offset-1 > section:nth-child(1) > p {
+body > main > section:nth-child(1) > section.contributors_books.col-md-8 > section:nth-child(1) > p {
     font-size: 1.5em;
     font-weight: bolder;
     margin-bottom: 1.5em;
@@ -159,7 +159,7 @@ body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-
 }
 
 .book-display {
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
     font-size: 1.25em;
 }
 
