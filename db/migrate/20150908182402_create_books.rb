@@ -5,7 +5,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :title
       t.string :publisher
       t.string :genre
-      t.string :type
+      t.string :materiality
       t.references :contributor, index: true, foreign_key: true
 
       t.timestamps null: false

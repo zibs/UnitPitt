@@ -18,3 +18,71 @@
 [11163] * Starting control server on unix:///tmp/puma-status-1442692836630-11158
 [11163] - Worker 0 (pid: 11170) booted, phase: 0
 [11170] ! Detected parent died, dying
+=== puma startup: 2015-09-19 13:08:41 -0700 ===
+[11293] * Starting control server on unix:///tmp/puma-status-1442693321216-11293
+[11293] - Worker 0 (pid: 11299) booted, phase: 0
+[11293] - Gracefully shutting down workers...
+[11293] === puma shutdown: 2015-09-19 13:12:44 -0700 ===
+[11293] - Goodbye!
+=== puma startup: 2015-09-19 13:13:54 -0700 ===
+[11389] * Starting control server on unix:///tmp/puma-status-1442693634985-11389
+[11389] - Worker 0 (pid: 11395) booted, phase: 0
+[11389] - Gracefully shutting down workers...
+[11389] === puma shutdown: 2015-09-19 13:15:12 -0700 ===
+[11389] - Goodbye!
+=== puma startup: 2015-09-19 13:17:15 -0700 ===
+[11474] * Starting control server on unix:///tmp/puma-status-1442693835234-11474
+[11474] - Worker 0 (pid: 11480) booted, phase: 0
+[11474] - Gracefully shutting down workers...
+[11474] === puma shutdown: 2015-09-19 13:20:10 -0700 ===
+[11474] - Goodbye!
+=== puma startup: 2015-09-19 13:20:31 -0700 ===
+[11545] * Starting control server on unix:///tmp/puma-status-1442694030997-11545
+[11545] - Worker 0 (pid: 11552) booted, phase: 0
+[11545] - Gracefully shutting down workers...
+[11545] === puma shutdown: 2015-09-19 13:44:27 -0700 ===
+[11545] - Goodbye!
+=== puma startup: 2015-09-19 19:04:09 -0700 ===
+[14257] * Starting control server on unix:///tmp/puma-status-1442714649982-14257
+[14257] - Worker 0 (pid: 14264) booted, phase: 0
+=== puma startup: 2015-09-19 23:37:45 -0700 ===
+=== puma startup: 2015-09-19 23:37:45 -0700 ===
+=== puma startup: 2015-09-19 23:37:45 -0700 ===
+=== puma startup: 2015-09-19 23:37:45 -0700 ===
+=== puma startup: 2015-09-19 23:37:45 -0700 ===
+=== puma startup: 2015-09-19 23:37:45 -0700 ===
+[14264] ! Detected parent died, dying
+=== puma startup: 2015-09-20 10:14:45 -0700 ===
+[19791] * Starting control server on unix:///tmp/puma-status-1442769285539-19791
+[19791] - Worker 0 (pid: 19798) booted, phase: 0
+[19791] - Gracefully shutting down workers...
+[19791] === puma shutdown: 2015-09-20 10:22:51 -0700 ===
+[19791] - Goodbye!
+=== puma startup: 2015-09-20 10:23:22 -0700 ===
+[19900] * Starting control server on unix:///tmp/puma-status-1442769802994-19900
+[19900] - Worker 0 (pid: 19906) booted, phase: 0
+[19900] - Gracefully shutting down workers...
+[19900] === puma shutdown: 2015-09-20 14:45:10 -0700 ===
+[19900] - Goodbye!
+=== puma startup: 2015-09-20 18:06:40 -0700 ===
+[23196] * Starting control server on unix:///tmp/puma-status-1442797600696-23196
+[23196] - Worker 0 (pid: 23202) booted, phase: 0
+=== puma startup: 2015-09-21 02:43:32 -0700 ===
+=== puma startup: 2015-09-21 02:43:32 -0700 ===
+=== puma startup: 2015-09-21 02:43:32 -0700 ===
+=== puma startup: 2015-09-21 02:43:32 -0700 ===
+=== puma startup: 2015-09-21 02:43:32 -0700 ===
+[23202] ! Detected parent died, dying
+=== puma startup: 2015-09-21 18:09:54 -0700 ===
+[822] * Starting control server on unix:///tmp/puma-status-1442884194935-817
+[822] - Worker 0 (pid: 829) booted, phase: 0
+[829] ! Detected parent died, dying
+=== puma startup: 2015-09-21 18:13:29 -0700 ===
+[1209] * Starting control server on unix:///tmp/puma-status-1442884409013-1209
+[1209] - Worker 0 (pid: 1215) booted, phase: 0
+[1209] - Gracefully shutting down workers...
+[1209] === puma shutdown: 2015-09-21 18:16:48 -0700 ===
+[1209] - Goodbye!
+=== puma startup: 2015-09-21 18:23:26 -0700 ===
+[1533] * Starting control server on unix:///tmp/puma-status-1442885006961-1533
+[1533] - Worker 0 (pid: 1539) booted, phase: 0

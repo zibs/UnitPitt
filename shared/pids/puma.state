@@ -1,17 +1,17 @@
 ---
-pid: 11163
+pid: 1533
 config: !ruby/object:Puma::Configuration
   cli_options: 
   conf: 
   options:
     :min_threads: 1
     :max_threads: 6
-    :quiet: true
+    :quiet: false
     :debug: false
     :binds:
     - unix:///home/raworth/project2055/shared/sockets/puma.sock
     :workers: 1
-    :daemon: true
+    :daemon: false
     :mode: :http
     :before_fork: []
     :worker_timeout: 60
@@ -22,9 +22,9 @@ config: !ruby/object:Puma::Configuration
     :redirect_append: true
     :pidfile: "/home/raworth/project2055/shared/pids/puma.pid"
     :state: "/home/raworth/project2055/shared/pids/puma.state"
-    :control_url: unix:///tmp/puma-status-1442692836630-11158
+    :control_url: unix:///tmp/puma-status-1442885006961-1533
     :worker_directory: "/home/raworth/project2055"
     :config_file: config/puma.rb
-    :control_url_temp: "/tmp/puma-status-1442692836630-11158"
-    :control_auth_token: c67cb5728522dca6d962d398f7df04e
+    :control_url_temp: "/tmp/puma-status-1442885006961-1533"
+    :control_auth_token: aeb6d433fc98a217ea33cc011adf73
     :tag: project2055
