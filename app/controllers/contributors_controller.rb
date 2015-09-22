@@ -1,4 +1,5 @@
 class ContributorsController < ApplicationController
+	include ContributorsHelper
 
 	def index
 		@contributors        = Contributor.order("created_at ASC")
@@ -24,16 +25,19 @@ class ContributorsController < ApplicationController
 	end
 
 	def authors
-		# returns array of authors3
-		# @authors = Book.pluck(:author)
-		@authors = Book.pluck(:author).sort_by!{ |m| m.split(" ").reverse.join.upcase }
-		@authors = @authors.zip.in_groups_of(4).transpose
+		
+		@authors    = Book.pluck(:author).sort_by!{ |m| m.split(" ").reverse.join.upcase }
+		@author_set = (Book.pluck(:author).length / 4)
+		@authors = @authors.zip.in_groups_of(@author_set).transpose
 		# @authors = [@authors].transpose.map(&:reverse)
 	end
 
+
+
 	def titles
-		# returns array of authors
+		
 		@titles = Book.pluck(:title).sort_by!{ |t| t.downcase }
-		@titles = @titles.zip.in_groups_of(4).transpose
+		@title_set = (Book.pluck(:title).length / 4)
+		@titles = @titles.zip.in_groups_of(@title_set).transpose
 	end
 end
