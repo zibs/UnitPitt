@@ -2,7 +2,7 @@ class Book < ActiveRecord::Base
   include PgSearch
   belongs_to :contributor
 
-    pg_search_scope :search, :against => [:author, :title, :publisher, :genre, :type],
+    pg_search_scope :search, :against => [:author, :title, :publisher, :genre, :materiality],
    	using: {tsearch: {dictionary: "english"}}
    
 
