@@ -10,7 +10,8 @@
 		<section class="row author-group">
 				<ul>
 				<% author_group.each do |author| %>
-				<li class ="col-md-3 col-sm-3 col-xs-3 author"><%= author.join %></li>
+
+				<li class ="col-md-3 col-sm-3 col-xs-3 author"><%= author.join unless author.nil? %></li>
 			<% end %>
 				</ul>
 		</section>
