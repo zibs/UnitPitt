@@ -153,8 +153,8 @@ section.searchbar {
 .book-result-title-author {}
 
 // AUTHOR TITLE
-body > main > section:nth-child(1) > section.contributors_books.col-md-8 > section:nth-child(1) > p {
-    font-size: 1.5em;
+body > main > section:nth-child(1) > section.contributors_books.col-md-8 > section:nth-child(1) > h4 {
+    // font-size: 1.25em;
     font-weight: bolder;
     margin-bottom: 1.5em;
     color: grey;
@@ -172,7 +172,7 @@ body > main > section:nth-child(1) > section.contributors_books.col-md-8 > secti
 // POSITION BOOKS
 body > main > section:nth-child(1) > section.contributors_books {
     position: relative;
-    top: 15vh;
+    top: 8vh;
 }
 
 .bio {
