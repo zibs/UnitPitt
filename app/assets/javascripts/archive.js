@@ -87,7 +87,9 @@ $(".backbone").click(function() {
     });
 });
 
-
+$(document).ready(function(){
+  $('.wishboneimages').draggable();  
+})
 
 // BORING ART 
 $(document).ready(function() {
