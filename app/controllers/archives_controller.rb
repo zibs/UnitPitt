@@ -20,6 +20,9 @@ include Rails.application.routes.url_helpers
 	def musikklubsidetwo
 	end
 
+	def wishbone
+	end
+
 	# BEGIN ARCHIVES
 	def outlaws
 	end

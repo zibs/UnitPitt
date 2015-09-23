@@ -125,6 +125,7 @@ body > main > section:nth-child(1) > section.contributors.col-md-3 > a > p {
 section.searchbar {
     position: absolute;
     margin-top: 2.5vh;
+    margin-bottom: 10%;
     .searchfield {
         border: 2px solid black;
         padding: 0.25em;
@@ -138,6 +139,7 @@ section.searchbar {
         border-radius: 4px;
         margin-left: 2em;
     }
+
 }
 
 // SEARCH RESULTS

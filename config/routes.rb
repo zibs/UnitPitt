@@ -14,6 +14,7 @@ Rails.application.routes.draw do
    # Begin Exhbitions
    get 'musikklub' =>  'archives#musikklub'
    get 'musikklub-sidetwo' => 'archives#musikklubsidetwo'
+   get 'Its-A-Long-Way-To-The-Wishbone-From-The-Backbone' => 'archives#wishbone', as: :wishbone
 
    # Begin Archive
    get 'directory' => 'archives#directory'
