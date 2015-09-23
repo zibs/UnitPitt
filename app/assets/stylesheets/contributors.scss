@@ -13,27 +13,27 @@
 }
 
 html.library > body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cousine', sans-serif;
 }
 
 // NAVBAR
 body > nav > div > div.navbar-header > a.navbar-brand {
     color: white;
     font-size: 1.5em;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
     letter-spacing: 4px;
     margin-right: 2em;
-    font-family: "Lato"
+  font-family: 'Cousine', sans-serif;
 }
 .navbar-brand {
-    font-style: italic;
+   font-family: 'Cousine', sans-serif;
 }
 
 .logo {
     margin: 0 0.5em;
     letter-spacing: 2px;
     color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
 }
 
 // add underline to navbar + color
@@ -41,7 +41,7 @@ body > nav > div > div.navbar-header > a.navbar-brand {
     width: 50%;
     > li > a {
         color: white;
-        font-family: "Lato";
+        font-family: 'Cousine', sans-serif;
         &:hover {
             text-decoration: underline;
         }
@@ -54,7 +54,7 @@ body > nav > div > div.navbar-header > a.navbar-brand {
 
 .navbar-inverse .navbar-nav > li > a {
     color: white;
-    font-family: "Lato";
+    font-family: 'Cousine', sans-serif;
 }
 
 .active-section {

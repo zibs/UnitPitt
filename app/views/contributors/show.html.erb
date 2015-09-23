@@ -1,4 +1,5 @@
-<% provide(:container_class, 'container-fluid') %>
+<%= provide(:html_class, 'library') %>
+<%= provide(:container_class, 'container-fluid') %>
 <%= render 'navbar' %>
 <!-- DISPLAY ALL CONTRIBUTORS -->
 <section class="row">
@@ -20,7 +21,7 @@
 		<section class="row">
 			<article class="bio">
 				<p class = "col-md-8 col-sm-10 col-xs-10 col-md-offset-1 col-xs-offset-1">
-					<%= @bio %>
+					<em> <%= @bio %> </em>
 				</p>
 			</article>
 		</section>
