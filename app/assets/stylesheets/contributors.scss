@@ -162,7 +162,7 @@ body > main > section:nth-child(1) > section.contributors_books.col-md-8 > secti
 
 .book-display {
     margin-bottom: 0.2em;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .book_author {}
@@ -177,10 +177,11 @@ body > main > section:nth-child(1) > section.contributors_books {
 
 .bio {
     margin-top: 10%;
+    margin-bottom: 15%;
     font-size: 1.23em;
     line-height: 1.25em;
  	p {
-	font-size: 1.2em;
+	font-size: 0.9em;
 	line-height: 1.25em;
 	}
 }
