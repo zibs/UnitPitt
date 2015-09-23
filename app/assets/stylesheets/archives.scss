@@ -456,7 +456,7 @@ html.wishbone > body {
     img {
         max-height: 200px;
         position: absolute;
-        display: inline;
+        display: inline-block;
         cursor: pointer;
         top: 16%;
         -webkit-animation: drip 20s  infinite alternate;
@@ -516,9 +516,10 @@ html.wishbone > body {
             display: inline-block;
             max-height: 200px;
             right: 50%;
+        }
             // -moz-animation: logsock 100s infinite alternate;
             // -webkit-animation: logsock 100s infinite alternate;
-        }
+        
         &:nth-of-type(9) {
             display: inline-block;
             right: 60%;
