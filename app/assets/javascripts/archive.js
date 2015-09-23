@@ -74,12 +74,13 @@ $(document).ready(function() {
 // JAMIE
 // var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 // var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
+
+
+
 // ZEB
 
-
-
-
-// THUMBNAIL CHANGER
+// 
 $(document).ready(function() {
 $(".backbone").click(function() {
     var clicked_image_path = $(this).attr("src");
