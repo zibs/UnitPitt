@@ -440,21 +440,16 @@ html.musikklub {
 /* ==========================================================================
 WISHBONEWISHBONEWISHBONEWISHBEONWISHBOENWSIHONBEWISHBENOWNSIHBNEON
    ========================================================================== */
-html.wishbone {
+
+html.wishbone > body {}
+
+.wishbonewrap {
+    // background-image: image-url("joelzebfur.jpg");
     
+    img {
+        height: 400px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -907,7 +902,6 @@ html.ultralottery > body > main > section.secretartshow > img {
 }
 
 
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1056,9 +1050,7 @@ html.ultralottery > body > main > section.secretartshow > img {
 }
 
 @media only screen and (max-height: 950px) {
-    .benjamin-speaks {
-        
-    }
+    .benjamin-speaks {}
     .benjamin-speaks h1 {
         font-family: "Noto-Serif";
         font-size: 2.75em;
@@ -1108,10 +1100,10 @@ html.ultralottery > body > main > section.secretartshow > img {
     }
     .exhibition-details {
         h3 {
-            font-size:0.9em;
+            font-size: 0.9em;
         }
         h4 {
-        font-size: 0.75em;
+            font-size: 0.75em;
         }
     }
 }
@@ -1188,7 +1180,7 @@ html.ultralottery > body > main > section.secretartshow > img {
         margin-top: 5%;
     }
     .exhbitimage {
-        max-height: 75  px;
+        max-height: 75 px;
         display: none;
         margin-left: auto;
         margin-right: auto;
@@ -1225,7 +1217,6 @@ html.ultralottery > body > main > section.secretartshow > img {
             font-size: 0.6em
         }
     }
- 
     .archive-logo {
         color: black;
         font-weight: bold;

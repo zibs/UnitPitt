@@ -8,7 +8,6 @@ $(document).ready(function() {
             "font-family": random_font
         });
     });
-
     // $(".unit-font").hover(function() {
     // var random_font = fonts[(Math.floor(Math.random()*12))]
     // $(this).css({"font-family": random_font});
@@ -67,8 +66,6 @@ $(document).ready(function() {
      $("#archive_posters").hover(function() {
          $("#archive_posters_link").fadeToggle("fast");
     });
-
-
 }); 
 
 
@@ -77,7 +74,18 @@ $(document).ready(function() {
 // JAMIE
 // var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 // var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+// ZEB
 
+
+
+
+// THUMBNAIL CHANGER
+$(document).ready(function() {
+$(".backbone").click(function() {
+    var clicked_image_path = $(this).attr("src");
+    $(".wishbonewrap").css({"background-image": "url(" + clicked_image_path + ")"});
+    });
+});
 
 
 
@@ -100,8 +108,6 @@ $(document).ready(function() {
                     "cursor": "initial",
                     "background-repeat": "repeat-x"
                 })
-
-
             });
         });
     });
