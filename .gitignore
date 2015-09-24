@@ -15,3 +15,5 @@
 # Ignore application configuration
 /config/application.yml
 /unused/unusedcode.html.erb
+/db/backups/
+
