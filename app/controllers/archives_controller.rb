@@ -7,6 +7,10 @@ include Rails.application.routes.url_helpers
 	@artifact = Artifact.order("RANDOM()").first
 	end
 
+	def about
+	end
+	
+
 	def directory	
 	end
 

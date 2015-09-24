@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
    root 'archives#index'
+   get 'about' => 'archives#about'
 
    # Begin Library
    resources :contributors, :path => "library"
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
    # Begin Exhbitions
    get 'musikklub' =>  'archives#musikklub'
    get 'musikklub-sidetwo' => 'archives#musikklubsidetwo'
-   get 'Its-A-Long-Way-To-The-Wishbone-From-The-Backbone' => 'archives#wishbone', as: :wishbone
+   get 'Its-a-long-way-from-the-wishbone-to-the-backbone' => 'archives#wishbone', as: :wishbone
 
    # Begin Archive
    get 'directory' => 'archives#directory'

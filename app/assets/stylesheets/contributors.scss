@@ -23,10 +23,11 @@ body > nav > div > div.navbar-header > a.navbar-brand {
     // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
     letter-spacing: 4px;
     margin-right: 2em;
-  font-family: 'Cousine', sans-serif;
+    font-family: 'Cousine', sans-serif;
 }
+
 .navbar-brand {
-   font-family: 'Cousine', sans-serif;
+    font-family: 'Cousine', sans-serif;
 }
 
 .logo {
@@ -79,8 +80,8 @@ section.contributors {
 
 section.row > section.welcome {
     position: relative;
-    margin-top: 17vh;
-    padding-left: 6%;
+    margin-top: 13vh;
+    padding-left: 5%;
 }
 
 // Image
@@ -90,8 +91,18 @@ section.row > section.welcome {
     bottom: 50px;
 }
 
+// WELCOME FONTSIZE 
+body > main > section > section.welcome.col-md-8 {
+    h4 {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
 // LINKS IN WELCOME 
-body > main > section > section.welcome.col-md-8.col-md-offset-1 > h4:nth-child(3) > a {
+body > main > section > section.welcome.col-md-8 > h4:nth-child(3) > a {
     color: black;
     font-weight: bold;
 }
@@ -132,7 +143,7 @@ section.searchbar {
         border-radius: 4px;
     }
     .submit-btn {
-        background: rgba(28, 255, 0, 0.3);
+        background-color: #DDE4EC;
         color: black;
         border: 2px solid black;
         padding: 0.25em 0.75em;
@@ -142,13 +153,14 @@ section.searchbar {
 }
 
 // SEARCH RESULTS
-
 .results-of-search {
     margin-top: 15%;
 }
 
 .contributor-results {}
+
 .book-results {}
+
 .book-result-title-author {}
 
 // AUTHOR TITLE
@@ -179,10 +191,10 @@ body > main > section:nth-child(1) > section.contributors_books {
     margin-bottom: 15%;
     font-size: 1.23em;
     line-height: 1.25em;
- 	p {
-	font-size: 0.8em;
-	line-height: 1.25em;
-	}
+    p {
+        font-size: 0.8em;
+        line-height: 1.25em;
+    }
 }
 
 // BIO POSITIONING
@@ -225,18 +237,16 @@ body > main > section:nth-child(1) > section.contributors_books {
     }
 }
 
-
-
 // @media 
 @media only screen and (max-width: 767px) {
     .librarypage-logo {
-    max-height: 100px;
-    position: relative;
-    bottom: 0px;
+        max-height: 100px;
+        position: relative;
+        bottom: 0px;
     }
     // logo
     body > nav > div > div.navbar-header > a.navbar-brand {
-         margin-right: 0em;
+        margin-right: 0em;
     }
     .welcome {
         text-align: right;
@@ -256,23 +266,21 @@ body > main > section:nth-child(1) > section.contributors_books {
     .searchbar {
         left: 35%;
         .searchfield {
-        width: 60px;
+            width: 60px;
         }
     }
-
-    .contributors a {  
+    .contributors a {
         font-size: 0.75em;
     }
-    .book-display{
+    .book-display {
         font-size: 0.75em;
-    } 
+    }
     body > main > section:nth-child(1) > section.contributors_books.col-md-8.col-md-offset-1 > section:nth-child(1) > p {
-       color: black;
-       text-decoration: underline;
-       font-size: 1em;
-   }
-
-   .results-of-search {
-    margin-top: 15%;
-}
+        color: black;
+        text-decoration: underline;
+        font-size: 1em;
+    }
+    .results-of-search {
+        margin-top: 15%;
+    }
 }
