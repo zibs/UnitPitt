@@ -2,7 +2,7 @@ class ContributorsController < ApplicationController
 	include ContributorsHelper
 
 	def index
-		@contributors        = Contributor.order("created_at ASC")
+		@contributors        = Contributor.order("created_at DESC")
 		@contributor_results = Contributor.full_search(params[:search]) unless params[:search].nil?
 		@book_results        = Book.full_search(params[:search]) unless params[:search].nil?
 
