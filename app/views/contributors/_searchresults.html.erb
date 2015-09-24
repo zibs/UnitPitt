@@ -22,20 +22,23 @@
 	<article class="row book-results">
 		<% @book_results.each do |book_result| %>
 		<section class="col-md-10 col-sm-4 col-xs-4 book-result-title-author">
-			<h4><b><%= book_result.title %></b> by <%= book_result.author %></h4>
+			<h4><b><u><%= book_result.title %></u></b> by <%= book_result.author %></h4>
 			</section>
 				<br>
+				<section class="book-result-info-wrap">
 					<section class="col-md-8 col-sm-4 col-xs-4">
 					<h4>Publisher: <em><%= book_result.publisher %></em></h4>
 					</section>
-					<br>
+					
 					<section class="col-md-8 col-sm-3 col-xs-3">
-					<h4><%= book_result.genre %></h4>
+					<h4>Genre: <%= book_result.genre %></h4>
 					</section>
 					<br>
 					<section class="col-md-8 col-sm-3 col-xs-3">
-					<h4><%= book_result.materiality %></h4>
+					<h4>Material: <%= book_result.materiality %></h4>
 					</section>
+				</section>
+
 			
 		<% end %>
 	</article>
