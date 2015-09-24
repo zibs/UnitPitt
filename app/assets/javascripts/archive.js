@@ -19,6 +19,16 @@ $(document).ready(function() {
 
 // Directory Javascripts
 
+// scroll
+// $(document).ready(function() {
+    // $("#enter-site").click(function() {
+        // $('html, body').animate({
+            // scrollTop: $("#musikklub_poster").offset().top
+        // }, 2000);
+    // });
+// });
+
+
 // rotatimg
 // I want to, upon HOVERING, 
 // CHANGE and MATCH the IMAGE with the LINK to the appropriate PAGE

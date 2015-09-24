@@ -16,5 +16,5 @@
 //= require jquery-ui
 //= require bootstrap
 //= require skrollr
-
+//= require skrollr.menu
 //= require_tree .

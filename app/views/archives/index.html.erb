@@ -18,7 +18,7 @@
         </section>
         <section class="row navigation">
             <article class="colo col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7">
-                <h1 class ="project-font">2055 PROJECT</h1>
+                <h1 id = "enter-site" class ="project-font"><a href="#exhibitions" data-menu-top="4000">2055 PROJECT</a></h1>
                 <h2 class = "unit-font">
                     <a href="http://www.helenpittgallery.org/">UNIT/PITT</a>
                 </h2>
@@ -39,12 +39,18 @@
 
 
 <script type="text/javascript">
+
 $(function() {
-    skrollr.init();
+skrollr.init()
 });
 $(document).on('page:load', function () {
 skrollr.init().refresh(); 
 });
+
+
+var s = skrollr.init();
+skrollr.menu.init(s, { animate: true, easing: 'sqrt',  scale: 2, duration: function(currentTop, targetTop) { return 8000;} } );
+
 </script>
 
 

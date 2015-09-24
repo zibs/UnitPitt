@@ -219,9 +219,25 @@ article.introduction {
     padding-bottom: 1em;
     color: white;
 }
+#enter-site {
+    cursor: pointer;
+}
 
 .navigation h1 {
     font-size: 3em;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: none;
+
+        }
+        &:visited {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
 
 .navigation h5 {
