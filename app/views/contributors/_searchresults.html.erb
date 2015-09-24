@@ -24,15 +24,17 @@
 		<section class="col-md-8 col-sm-4 col-xs-4 book-result-title-author">
 			<h4><b><%= book_result.title %></b> by <%= book_result.author %></h4>
 			</section>
-		<section class="col-md-4 col-sm-4 col-xs-4">
-			<h4><em><%= book_result.publisher %></em></h4>
-			</section>
-		<br>
-		<section class="col-md-3 col-sm-3 col-xs-3">
+				<section class="row">
+					<section class="col-md-4 col-sm-4 col-xs-4">
+					<h4><em><%= book_result.publisher %></em></h4>
+					</section>
+					<br>
+					<section class="col-md-4 col-sm-3 col-xs-3">
 					<h4><%= book_result.genre %></h4>
-			</section>
-		<section class="col-md-3 col-sm-3 col-xs-3">
+					</section>
+					<section class="col-md-4 col-sm-3 col-xs-3">
 					<h4><%= book_result.materiality %></h4>
+					</section>
 			</section>
 		<% end %>
 	</article>
