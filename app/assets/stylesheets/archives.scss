@@ -406,13 +406,50 @@ DIRECTORY DIRECOTRY!!!!
     position: fixed;
     bottom: 0;
     right: 0;
+    &:first-of-type {
+        bottom: 22px;
+    }
+    a {
+        // color: black;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            text-decoration: underline;
+
+        }
+    }
 }
 
 // about
 html.about {
     padding: 2em;
+    body {
+        font-family: "Lato", sans-serif;
+    }
     .aboutquote {
         // background-color: red;
+    }
+
+    .paragraph {
+        font-size: 1.25em;
+        line-height: 1.75em;
+        margin-bottom: 5%;
+        a {
+            color: white;
+            background-color: black;
+            padding: 0.25em 0.75em;
+            text-decoration: none;
+            border-radius: 5px;
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+            &:visited {
+                color: white;
+            }
+        }
+
+
     }
 }
 
@@ -467,23 +504,33 @@ WISHBONEWISHBONEWISHBONEWISHBEONWISHBOENWSIHONBEWISHBENOWNSIHBNEON
 
 html.wishbone > body {
     position: relative;
-    overflow: auto;
-    // height: 100%;
+    overflow: hidden;
+    
 }
 
-.wishbonewrap {
-    // background-image: image-url("joelzeb10.jpg");
+.zebjoel-wrap {
+    
+}
+
+.joels-statement {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    height: 200vh;
+    height: 100vh;
+}
+.wishbonewrap {
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    
     img {
         max-height: 200px;
         position: absolute;
         display: inline-block;
         cursor: pointer;
         top: 16%;
-        -webkit-animation: drip 20s infinite alternate;
+        z-index: 100;
         &:first-of-type {
             // -webkit-animation: plinthlove 200s infinite alternate;
         }

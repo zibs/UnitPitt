@@ -94,13 +94,28 @@ $(document).ready(function() {
 $(document).ready(function() {
 $(".backbone").click(function() {
     var clicked_image_path = $(this).attr("src");
-    $(".wishbonewrap").css({"background-image": "url(" + clicked_image_path + ")"});
+    $(".joels-statement").css({"background-image": "url(" + clicked_image_path + ")"});
     });
 });
+
+// $(document).ready(function() {
+    // var possible_background = ["joelzeb3.jpg", "joelzeb9.jpg", "joelzeb10.jpg", "joelzeb11.jpg"];
+    // $(".joels-statement").click(function() {
+      // var background = possible_background[(Math.floor(Math.random() * 4))]
+    // $(".zebjoel-wrap").css({"background-image": "url(" + background + ")"});
+    // });
+// });
 
 $(document).ready(function(){
   $('.wishboneimages').draggable();  
 })
+
+$(document).ready(function(){
+  $('.wishboneimages').click(function() {
+        $(this).css({"-webkit-animation": "drip 20s 2 alternate"});
+  });  
+})
+
 
 // BORING ART 
 $(document).ready(function() {
