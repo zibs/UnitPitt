@@ -8,7 +8,7 @@
 	<article class="row contributor-results">
     	<% @contributor_results.each do | contributor_result | %>	
         <section class="col-md-8 col-sm-4 col-xs-4"> 
-        <h4><b><%= contributor_result.name	%></b>: </h4>
+        <h4><b><%= link_to contributor_result.name, contributor_result%></b>: </h4>
         </section><br>
         <section class="col-md-8 col-sm-4 col-xs-4">
         	<p><%= contributor_result.bio %></p>
