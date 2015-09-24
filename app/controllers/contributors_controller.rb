@@ -13,7 +13,7 @@ class ContributorsController < ApplicationController
     
 
 
-		
+			
 		# @search_results = Book.text_search(params[:query]).order("created_at DESC")
 	end
 
@@ -25,7 +25,6 @@ class ContributorsController < ApplicationController
 	end
 
 	def authors
-		
 		@authors    = Book.pluck(:author).sort_by!{ |m| m.split(" ").reverse.join.upcase }
 		@author_set = (Book.pluck(:author).length / 4)
 		@authors = @authors.zip.in_groups_of(@author_set).transpose
@@ -35,7 +34,6 @@ class ContributorsController < ApplicationController
 
 
 	def titles
-		
 		@titles = Book.pluck(:title).sort_by!{ |t| t.downcase }
 		@title_set = (Book.pluck(:title).length / 4)
 		@titles = @titles.zip.in_groups_of(@title_set).transpose
