@@ -7,19 +7,19 @@
 	<section class="contributors_books col-md-8 col-sm-8 col-xs-8">
 				<!-- DISPLAY BOOKS -->
 				<section class="row">
-				<h4 class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-5">TITLE</p>
-				<h4 class="col-md-5  col-sm-5 col-xs-offset-1 col-xs-5">AUTHOR</p>	
+				<h4 class=" col-md-5  col-sm-5  col-xs-5">TITLE</p>
+				<h4 class="col-md-5  col-sm-5 col-xs-5">AUTHOR</p>	
 				</section>
 			<% @book_collection.each do |book_collection|%>
 				<section class="row book-display">
-					<p class="book_title  col-md-5  col-sm-5 col-xs-offset-1 col-xs-5"><b><%= book_collection.title %></b></p>
-					<p class = "book_author col-md-5  col-sm-5 col-xs-offset-1 col-xs-5"><%= book_collection.author %></p>
+					<p class="book_title  col-md-5  col-sm-5 col-xs-5"><b><%= book_collection.title %></b></p>
+					<p class = "book_author col-md-5  col-sm-5  col-xs-5"><%= book_collection.author %></p>
 				</section>
 			<% end %>
 		<!-- DISPLAY BIO -->
 		<section class="row">
 			<article class="bio">
-				<p class = "col-md-8 col-sm-10 col-xs-10 col-md-offset-1 col-xs-offset-1">
+				<p class = "col-md-8 col-sm-10 col-xs-10 ">
 					<em> <%= @bio %> </em>
 				</p>
 			</article>
