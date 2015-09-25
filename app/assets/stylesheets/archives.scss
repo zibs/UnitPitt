@@ -504,7 +504,7 @@ WISHBONEWISHBONEWISHBONEWISHBEONWISHBOENWSIHONBEWISHBENOWNSIHBNEON
 
 html.wishbone > body {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     
 }
 
@@ -516,7 +516,7 @@ html.wishbone > body {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    height: 100vh;
+    // height: 100vh;
 }
 .wishbonewrap {
    
@@ -525,87 +525,96 @@ html.wishbone > body {
     position: relative;
     
     img {
-        max-height: 200px;
-        position: absolute;
+        max-height: 120px;
+        // position: absolute;
         display: inline-block;
         cursor: pointer;
-        top: 16%;
+        // top: 16%;
         z-index: 100;
         &:first-of-type {
             // -webkit-animation: plinthlove 200s infinite alternate;
         }
         &:nth-of-type(1) {
             display: inline-block;
-            max-height: 200px;
-            right: 80%;
+            // max-height: 200px;
+            // right: 80%;
             // -moz-animation: diagsix 10s infinite alternate;
             // -webkit-animation: diagsix 10s infinite alternate;
         }
         &:nth-of-type(2) {
             display: inline-block;
-            max-height: 200px;
-            right: 0%;
+            // max-height: 200px;
+            // right: 0%;
             // -moz-animation: diagsix 10s infinite alternate;
             // -webkit-animation: diagsix 10s infinite alternate;
         }
         &:nth-of-type(3) {
             display: inline-block;
-            max-height: 200px;
-            right: 90%;
+            // max-height: 200px;
+            // right: 90%;
             // -moz-animation: spiller 10s infinite alternate;
             // -webkit-animation: spiller 10s infinite alternate;
         }
         &:nth-of-type(4) {
             display: inline-block;
-            max-height: 200px;
-            right: 10%;
+            // max-height: 200px;
+            // right: 10%;
             // -moz-animation: diagsix 10s infinite alternate;
             // -webkit-animation: diagsix 10s infinite alternate;
         }
         &:nth-of-type(5) {
             display: inline-block;
-            max-height: 200px;
-            right: 20%;
+            // max-height: 200px;
+            // right: 20%;
             // -moz-animation: bucketbow 10s infinite;
             // -webkit-animation: bucketbow 10s infinite ;
         }
         &:nth-of-type(6) {
             display: inline-block;
-            max-height: 200px;
-            right: 30%;
+            // max-height: 200px;
+            // right: 30%;
             // -moz-animation: diagsix 10s infinite alternate;
             // -webkit-animation: diagsix 10s infinite alternate;
         }
         &:nth-of-type(7) {
             display: inline-block;
-            max-height: 200px;
-            right: 40%;
+            // max-height: 200px;
+            // right: 40%;
             // -moz-animation: cementpants 50s infinite alternate;
             // -webkit-animation: cementpants 50s infinite alternate;
         }
         &:nth-of-type(8) {
             display: inline-block;
-            max-height: 200px;
-            right: 50%;
+            // max-height: 200px;
+            // right: 50%;
         }
         // -moz-animation: logsock 100s infinite alternate;
         // -webkit-animation: logsock 100s infinite alternate;
         &:nth-of-type(9) {
             display: inline-block;
-            right: 60%;
-            max-height: 200px;
+            // right: 60%;
+            // max-height: 200px;
             // -moz-animation: diagsix 10s infinite alternate;
             // -webkit-animation: diagsix 10s infinite alternate;
         }
         &:nth-of-type(10) {
             display: inline-block;
-            right: 70%;
-            max-height: 200px;
+            // right: 70%;
+            // max-height: 200px;
             // -moz-animation: bonedrop 200s infinite alternate;
             // -webkit-animation: bonedrop 200s infinite alternate;
         }
     }
 }
+
+
+.paused {
+    -webkit-animation-play-state:paused !important;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused; 
+    animation-play-state:paused;
+}
+
 
 @keyframes drip {
     // 10% {
@@ -626,7 +635,7 @@ html.wishbone > body {
     // }
     100% {
         transform: scale(20, 20) skew(120deg, 120deg) rotate(360deg);
-        opacity: 0.75;
+        opacity: 0.90;
     }
 }
 

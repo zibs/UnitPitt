@@ -10,11 +10,7 @@ class ContributorsController < ApplicationController
 		    format.html 
 		   	format.js
 		end
-    
-
-
-			
-		# @search_results = Book.text_search(params[:query]).order("created_at DESC")
+	# @search_results = Book.text_search(params[:query]).order("created_at DESC")
 	end
 
 	def show

@@ -101,10 +101,14 @@ $(".backbone").click(function() {
 // $(document).ready(function() {
     // var possible_background = ["joelzeb3.jpg", "joelzeb9.jpg", "joelzeb10.jpg", "joelzeb11.jpg"];
     // $(".joels-statement").click(function() {
-      // var background = possible_background[(Math.floor(Math.random() * 4))]
     // $(".zebjoel-wrap").css({"background-image": "url(" + background + ")"});
     // });
 // });
+
+
+$(document).ready(function() {
+
+});
 
 $(document).ready(function(){
   $('.wishboneimages').draggable();  
@@ -113,8 +117,24 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.wishboneimages').click(function() {
         $(this).css({"-webkit-animation": "drip 20s 2 alternate"});
+        $(this).addClass("animating");
   });  
 })
+
+
+$(document).ready(function() {
+         $(".wishboneimages").click(function () {
+             if ($(this).hasClass('paused')) {
+                 $(this).removeClass('paused');
+                 return;
+             }
+             $(this).addClass('paused');
+             $(this).on('webkitAnimationEnd', function () {
+                 this.style.webkitAnimationPlayState = "paused";
+             });
+         });
+});
+
 
 
 // BORING ART 
