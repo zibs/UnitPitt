@@ -18,7 +18,6 @@ Rails.application.routes.draw do
    get 'Its-a-long-way-from-the-wishbone-to-the-backbone' => 'archives#wishbone', as: :wishbone
 
    # Begin Archive
-   get 'directory' => 'archives#directory'
    get 'acknowledgments' => 'archives#acknowledgments'
    get 'OutlawArtistsAtThePitt' => 'archives#outlaws'
    get 'Elaine-Brewer-White-Seven-Sins-and-the-Television-Set' => 'archives#sevensins'

@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.wishboneimages').click(function() {
-        $(this).css({"-webkit-animation": "drip 20s 2 alternate"});
+        $(this).css({"-webkit-animation": "drip 20s 2 alternate", "animation" : "drip 20s 2 alternate"});
         $(this).addClass("animating");
   });  
 })
