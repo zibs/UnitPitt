@@ -14,7 +14,7 @@ class ContributorsController < ApplicationController
 	end
 
 	def show
-		@contributors    = Contributor.order("created_at DESC")
+		@contributors    = Contributor.order("created_at DESC").sort_by(&:name)
 		@contributor     = Contributor.friendly.find(params[:id])
 		@bio             = Contributor.friendly.find(params[:id]).bio
 		@book_collection = @contributor.books.all

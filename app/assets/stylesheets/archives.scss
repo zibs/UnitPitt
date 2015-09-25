@@ -279,13 +279,13 @@ article.introduction {
 
 // ACKNOWLEDGMENTS
 .acknowledgment-text {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 5%;
     font-family: "Lato";
     word-wrap: break-word;
     h4 {
-        font-size: 2em;
-        line-height: 1.5em;
+        font-size: 1.75emem;
+        line-height: 1.4em;
     }
     a {
         color: black;
@@ -298,7 +298,7 @@ article.introduction {
 }
 
 .acknowledgment-images img {
-    max-height: 200px;
+    max-height: 175px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -404,10 +404,10 @@ DIRECTORY DIRECOTRY!!!!
 
 .TBA {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 5px;
     &:first-of-type {
-        bottom: 22px;
+        // bottom: 22px;
     }
     a {
         // color: black;
@@ -415,8 +415,10 @@ DIRECTORY DIRECOTRY!!!!
         &:hover {
             color: black;
             text-decoration: underline;
-
         }
+    }
+    &:last-of-type {
+        right: 50vw;
     }
 }
 
@@ -429,7 +431,6 @@ html.about {
     .aboutquote {
         // background-color: red;
     }
-
     .paragraph {
         font-size: 1.25em;
         line-height: 1.75em;
@@ -448,8 +449,6 @@ html.about {
                 color: white;
             }
         }
-
-
     }
 }
 
@@ -462,6 +461,30 @@ html.musikklub {
     background-color: black;
     > body {
         background-color: black;
+        .return-homepage-jamie {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+            a {
+                color: white;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+         .return-homepage-jamie-sidetwo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 2;
+            a {
+                color: white;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
     }
     .fliptape {
         position: relative;
@@ -505,12 +528,21 @@ WISHBONEWISHBONEWISHBONEWISHBEONWISHBOENWSIHONBEWISHBENOWNSIHBNEON
 html.wishbone > body {
     position: relative;
     // overflow: hidden;
-    
+    .return-homepage {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        a {
+            color: black;
+            &:hover {
+                color: black;
+            }
+        }
+    }
 }
 
-.zebjoel-wrap {
-    
-}
+.zebjoel-wrap {}
 
 .joels-statement {
     background-repeat: no-repeat;
@@ -518,12 +550,11 @@ html.wishbone > body {
     position: relative;
     // height: 100vh;
 }
+
 .wishbonewrap {
-   
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    
     img {
         max-height: 120px;
         // position: absolute;
@@ -607,14 +638,12 @@ html.wishbone > body {
     }
 }
 
-
 .paused {
-    -webkit-animation-play-state:paused !important;
-    -moz-animation-play-state:paused;
-    -o-animation-play-state:paused; 
-    animation-play-state:paused;
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
-
 
 @keyframes drip {
     // 10% {
