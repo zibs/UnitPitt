@@ -137,6 +137,8 @@ $(document).ready(function() {
 
 
 
+
+
 // BORING ART 
 $(document).ready(function() {
     $(".boringart").click(function() {
