@@ -437,8 +437,7 @@ html.about {
         font-size: 1.25em;
         line-height: 1.75em;
         margin-top: 5%;
-        &:first-of-type {
-        }
+        &:first-of-type {}
         a {
             color: white;
             background-color: black;
@@ -477,7 +476,7 @@ html.musikklub {
                 }
             }
         }
-         .return-homepage-jamie-sidetwo {
+        .return-homepage-jamie-sidetwo {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -566,7 +565,6 @@ html.wishbone > body {
         cursor: pointer;
         // top: 16%;
         z-index: 100;
-        
     }
 }
 
@@ -578,15 +576,21 @@ html.wishbone > body {
 }
 
 @keyframes drip {
-    
+    0% {}
     100% {
         transform: scale(20, 20) skew(120deg, 120deg) rotate(360deg);
         -webkit-transform: scale(20, 20) skew(120deg, 120deg) rotate(360deg);
         opacity: 0.90;
     }
 }
-
-
+@-webkit-keyframes drip {
+    0% {}
+    100% {
+        transform: scale(20, 20) skew(120deg, 120deg) rotate(360deg);
+        -webkit-transform: scale(20, 20) skew(120deg, 120deg) rotate(360deg);
+        opacity: 0.90;
+    }
+}
 
 // line them up horizontally, have them all drop, but code their descent
 // and the transformation of their descent...
@@ -672,8 +676,6 @@ html.wishbone > body {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
-
-
 
 
 /* ==========================================================================
@@ -1159,6 +1161,34 @@ PLAYING AROUND
     .exhibition {
         margin-top: 10%;
     }
+    .TBA {
+        position: fixed;
+        bottom: 10px;
+        right: 5px;
+        &:first-of-type {
+            // bottom: 22px;
+        }
+        a {
+            // color: black;
+            text-decoration: none;
+            &:hover {
+                color: black;
+                text-decoration: underline;
+            }
+        }
+        &:last-of-type {
+            right: 75vw;
+        }
+    }
+    .contributors {
+        position: relative;
+    }
+    .contributor-title {
+
+        font-size: 0.7em;
+        
+        
+    }   
 }
 
 // IPAD MEDIA QUERY 
