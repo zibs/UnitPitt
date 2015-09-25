@@ -13,7 +13,7 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
+//= require jquery-ui/draggable
 //= require bootstrap
 //= require skrollr
 //= require skrollr.menu

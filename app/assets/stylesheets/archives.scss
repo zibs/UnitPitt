@@ -283,7 +283,7 @@ article.introduction {
 .acknowledgment-text {
     margin-top: 10%;
     margin-bottom: 5%;
-    font-family: "Lato";
+    font-family: "UPP-Sans";
     word-wrap: break-word;
     h4 {
         font-size: 1.75emem;
@@ -431,12 +431,14 @@ html.about {
         font-family: "Lato", sans-serif;
     }
     .aboutquote {
-        // background-color: red;
+        margin-top: 5%;
     }
     .paragraph {
         font-size: 1.25em;
         line-height: 1.75em;
-        margin-bottom: 5%;
+        margin-top: 5%;
+        &:first-of-type {
+        }
         a {
             color: white;
             background-color: black;
@@ -570,9 +572,9 @@ html.wishbone > body {
 
 .paused {
     -webkit-animation-play-state: paused !important;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important;
+    animation-play-state: paused !important;
 }
 
 @keyframes drip {
