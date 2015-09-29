@@ -21,7 +21,7 @@ class ContributorsController < ApplicationController
 	end
 
 	def authors
-		@authors    = Book.pluck(:author).sort_by!{ |m| m.split(" ").reverse.join.upcase }
+		@authors    = Book.pluck(:author).sort_by!{ |m| m.downcase }
 		@author_set = (Book.pluck(:author).length / 4)
 		@authors = @authors.zip.in_groups_of(@author_set).transpose
 		# @authors = [@authors].transpose.map(&:reverse)
