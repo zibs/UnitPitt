@@ -1,8 +1,6 @@
 <article id = "exhibitions" class="container-fluid">
-<section class="row">
-
+<section class="row first-row">
 <!-- Musik Klub -->
-
 <section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3  col-sm-3 col-xs-6  exhibition", id = "musikklub_poster">
 <%= link_to image_tag("musikklub.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: "exhbitimage"), musikklub_path %>
 <article class="exhibition-details" id="musikklub_poster_link">
@@ -11,9 +9,7 @@
       <!-- <h4 class ="text-center">Sept 3rd - ongoing</h4> -->
 </article>
 </section>
-
 <!-- It's a Long Way From the Wishbone to the Backbone -->
-
 <section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3 col-sm-3 col-xs-6  exhibition", id = "wishbone_poster">
 <%= link_to image_tag("wishbone.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: "exhbitimage"), wishbone_path %>
 <article class="exhibition-details" id="wishbone_poster_link">
@@ -22,9 +18,7 @@
       <!-- <h4 class ="text-center">Sept  11 - October 14th, 2015</h4> -->
   </article> 
 </section>
-
 <!-- Limited Time Library -->
-
 <section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3  col-sm-3 col-xs-6 exhibition", id = "library_poster">
 <%= link_to image_tag("librarylogosimple.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: " exhbitimage"), contributors_path %>
 <article class="exhibition-details" id = "library_poster_link" >
@@ -33,9 +27,7 @@
       <!-- <h4 class ="text-center">October 4th - November 15th, 2015</h4> -->
 </article>
 </section>
-
 <!-- Archives -->
-
 <article data-4000="opacity:0" data-5000="opacity:1" class = "col-md-3 col-sm-3 col-xs-6  exhibition" id = "archive_posters">
 <section class="rotatimg">
     <%= link_to image_tag("#{@artifact.image}", alt: "#{@artifact.alt}", class: "img-responsive frontpageimage center-block "), @artifact.path , data: { no_turbolink: true }, class: "archive-link "%>
@@ -53,7 +45,15 @@
   </section>
 <div class="clearfix"></div>
 </section>
+<!-- end first row -->
+<!-- begin second row -->
+<section class="row second-row">
+<section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3  col-sm-3 col-xs-6 exhibition", id = "musikklubselectors">
+<%= link_to image_tag("musikklubselectors.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: " exhbitimage"), root_path %>
+</section>
 
+</section>
+<!-- end second row -->
 <section class="row">
  
   <h4 class = "TBA text-muted unit-font">More Programming TBA...</h4>

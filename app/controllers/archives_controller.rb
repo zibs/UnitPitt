@@ -27,6 +27,12 @@ include Rails.application.routes.url_helpers
 	def wishbone
 	end
 
+  def musikklubselectorsa
+  end
+  
+  def musikklubselectorsb
+  end
+
 	# BEGIN ARCHIVES
 	def outlaws
 	end

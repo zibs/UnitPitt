@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
-   root 'archives#index'
+   root 'archives#musikklubselectorsa'
    get 'about' => 'archives#about'
+   get '2055Project' => 'archives#index', as: :index
 
    # Begin Library
    resources :contributors, :path => "library"
@@ -16,7 +17,8 @@ Rails.application.routes.draw do
    get 'musikklub' =>  'archives#musikklub'
    get 'musikklub-sidetwo' => 'archives#musikklubsidetwo'
    get 'Its-a-long-way-from-the-wishbone-to-the-backbone' => 'archives#wishbone', as: :wishbone
-
+   get 'musikklub-special-selectors-a-side' => 'archives#musikklubselectorsa'
+   get 'musikklub-special-selectors-b-side' => 'archives#musikklubselectorsb'
    # Begin Archive
    get 'acknowledgments' => 'archives#acknowledgments'
    get 'OutlawArtistsAtThePitt' => 'archives#outlaws'

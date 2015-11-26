@@ -105,11 +105,6 @@ $(".backbone").click(function() {
     // });
 // });
 
-
-$(document).ready(function() {
-
-});
-
 $(document).ready(function(){
   $('.wishboneimages').draggable();  
 })
