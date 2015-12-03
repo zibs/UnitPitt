@@ -5,4 +5,5 @@ www.2055project.website is an online exhibition space. It embraces the platform 
 
 ~a collaborative project with Catherine de Montreuil~
 
-![Screenshot](https://raw.github.com/zibs/mail-with-rails/master/app/assets/images/readme.png)
+![Screenshot
+](https://raw.github.com/zibs/UnitPitt/master/app/assets/images/readme.png)
