@@ -1,0 +1,15 @@
+<%= provide(:html_class, "motherhastings") %>
+<%= provide(:container_class, "container-fluid") %>
+<nav class="homepage-graeme">
+  <%= link_to "Continue to 2055 Project", index_path %>
+</nav>
+<%= image_tag("halftone.jpg", class: "fader-img-graeme") %>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/14xELKBQIeI?autoplay=1&amp;loop=1&playlist=14xELKBQIeI&enablejsapi=1" frameborder="0" allowfullscreen class = "profile-hastings" id = "ytplayer"></iframe>
+<div class="video-wrapper-no-opacity col-md-12">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5lcyXhNXhoE?autoplay=1&amp;loop=1&playlist=5lcyXhNXhoE" class = "inverted-hastings" frameborder="0" allowfullscreen></iframe>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+  var player = iframe.getElementById('ytplayer');
+  player.mute();
+</script>

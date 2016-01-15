@@ -16,7 +16,7 @@
       <!-- <h3 class ="text-center"><%= link_to "It's a Long Way From the Wishbone to the Backbone", root_path, data: { no_turbolink: true }, class: "exhibition-link" %> </h3> -->
       <!-- <h4 class ="text-center">Works by Joël Doyle. Curated by Zebulon Zang </h4> -->
       <!-- <h4 class ="text-center">Sept  11 - October 14th, 2015</h4> -->
-  </article> 
+  </article>
 </section>
 <!-- Limited Time Library -->
 <section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3  col-sm-3 col-xs-6 exhibition", id = "library_poster">
@@ -39,7 +39,7 @@
 </article>
 <section class="swap-images">
     <%@artifacts.each do |artifact| %>
-      <%= link_to image_tag("#{artifact.image}", alt: "#{artifact.alt}", class: "img-responsive"), 
+      <%= link_to image_tag("#{artifact.image}", alt: "#{artifact.alt}", class: "img-responsive"),
       artifact.path, data: { no_turbolink: true }, class: "archive-link"%>
     <% end %>
   </section>
@@ -49,15 +49,21 @@
 <!-- begin second row -->
 <section class="row second-row">
 <section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3  col-sm-3 col-xs-6 exhibition", id = "musikklubselectors">
-<%= link_to image_tag("musikklubselectors.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: " exhbitimage"), root_path %>
+<%= link_to image_tag("musikklubselectors.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: " exhbitimage"), musikklubselectorsa_path %>
 </section>
+<section data-4000="opacity:0" data-5000="opacity:1" class="col-md-3  col-sm-3 col-xs-6 exhibition", id = "musikklubselectors">
+<%= link_to image_tag("motherhastingstimecapsule.jpg", alt: "One time only...", :data => {:'3000' => "display: none;", :'3200' => "display:block;" }, class: " exhbitimage"), root_path %>
+</section>
+
+
+
 
 </section>
 <!-- end second row -->
 <section class="row">
- 
+
   <h4 class = "TBA text-muted unit-font">More Programming TBA...</h4>
-   <h4 class = "TBA unit-font"> 
+   <h4 class = "TBA unit-font">
     <%= link_to "ABOUT", about_path, class: "text-muted" %></h4>
 </section>
 

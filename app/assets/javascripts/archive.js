@@ -30,10 +30,10 @@ $(document).ready(function() {
 
 
 // rotatimg
-// I want to, upon HOVERING, 
+// I want to, upon HOVERING,
 // CHANGE and MATCH the IMAGE with the LINK to the appropriate PAGE
 // to do so I will need to create a association between IMAGELINKPAGE
-// this association will then be switched upon hovering. 
+// this association will then be switched upon hovering.
 
 $(document).ready(function() {
     // Load up Image Links
@@ -76,7 +76,7 @@ $(document).ready(function() {
      $("#archive_posters").hover(function() {
          $("#archive_posters_link").fadeToggle("fast");
     });
-}); 
+});
 
 
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 // ZEB
 
-// 
+//
 $(document).ready(function() {
 $(".backbone").click(function() {
     var clicked_image_path = $(this).attr("src");
@@ -106,14 +106,14 @@ $(".backbone").click(function() {
 // });
 
 $(document).ready(function(){
-  $('.wishboneimages').draggable();  
+  $('.wishboneimages').draggable();
 })
 
 $(document).ready(function(){
   $('.wishboneimages').click(function() {
         $(this).css({"-webkit-animation": "drip 20s 2 alternate", "animation" : "drip 20s 2 alternate"});
         $(this).addClass("animating");
-  });  
+  });
 })
 
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
 
 
 
-// BORING ART 
+// BORING ART
 $(document).ready(function() {
     $(".boringart").click(function() {
         $(this).css({

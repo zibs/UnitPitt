@@ -4,14 +4,14 @@ class Book < ActiveRecord::Base
 
     pg_search_scope :search, :against => [:author, :title, :publisher, :genre, :materiality],
    	using: {tsearch: {dictionary: "english"}}
-   
+
 
 
   	def self.full_search(query)
   		if query.present?
   			search(query)
   		else
-  			nil 
+  			nil
   		end
   	end
 

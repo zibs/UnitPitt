@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 # get 'Slug' => 'controller#ACTION==FILENAME'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+   root 'archives#motherhastings'
 
-   root 'archives#musikklubselectorsa'
    get 'about' => 'archives#about'
    get '2055Project' => 'archives#index', as: :index
 
@@ -14,6 +14,8 @@ Rails.application.routes.draw do
    get 'titles'  => 'contributors#titles'
 
    # Begin Exhbitions
+   get 'motherhastings' => 'archives#motherhastings'
+   get 'musikklubselectorsa' => 'archives#musikklubselectorsa'
    get 'musikklub' =>  'archives#musikklub'
    get 'musikklub-sidetwo' => 'archives#musikklubsidetwo'
    get 'Its-a-long-way-from-the-wishbone-to-the-backbone' => 'archives#wishbone', as: :wishbone

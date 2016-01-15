@@ -7,7 +7,7 @@ gem 'rails', '4.2.4'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-# Use Bootstrap 
+# Use Bootstrap
 gem 'bootstrap-sass'
 # Normalize
 gem 'normalize-rails'
@@ -33,10 +33,11 @@ gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'skrollr-rails'
 gem 'pg_search'
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use Pume as the app server
-group :produciton do
+group :production do
 gem 'puma'
 end
 
@@ -58,4 +59,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

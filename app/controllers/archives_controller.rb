@@ -9,41 +9,44 @@ include Rails.application.routes.url_helpers
 
 	def about
 	end
-	
 
-	def directory	
+
+	def directory
 	end
 
 	def acknowledgments
 	end
 
 	# BEGIN EXHBITIONS
-	def musikklub 
+	def musikklub
 	end
-	
+
 	def musikklubsidetwo
 	end
 
 	def wishbone
 	end
-
+      
   def musikklubselectorsa
   end
-  
+
   def musikklubselectorsb
+  end
+
+  def motherhastings
   end
 
 	# BEGIN ARCHIVES
 	def outlaws
 	end
-	
+
 	def sevensins
 	end
 
 	def pictographs
 	end
 
-	def boringart	
+	def boringart
 	end
 
 	def sublimerap
@@ -57,10 +60,10 @@ include Rails.application.routes.url_helpers
 
 	def secretartshow
 	end
-	
 
 
 
-	
+
+
 
 end

@@ -2,7 +2,7 @@
 <% provide(:html_class, 'project2055') %>
 <% provide(:container_class, "") %>
 
-<%= render "google_fonts" %> 
+<%= render "google_fonts" %>
 
 <section class="intro-wrapper" data-2500="background-color:white;" data-3000="background-color:black;">
 <article data-0="transform:scale(1);" data-3000="transform:scale(5.0);" data-3001="opacity:1;position:fixed;" data-3500="opacity:0;position:absolute;" class="introduction">
@@ -27,27 +27,19 @@
                 </h2>
             </article>
         </section>
-
 </article>
-</section> 
-
+</section>
 <article data-1="display:none;opacity:0;position:relative;" data-4000="display:initial;opacity:1;position:fixed;" class="directory-wrap">
 <%= render "exhibitions" %>
 </article>
-
-
-
-
 <script type="text/javascript">
-
 $(function() {
 skrollr.init()
 });
 $(document).on('page:load', function () {
-skrollr.init().refresh(); 
+skrollr.init().refresh();
 });
-
-$(function() { 
+$(function() {
 var s = skrollr.init();
 skrollr.menu.init(s, { animate: true, easing: 'sqrt',  scale: 1, duration: function(currentTop, targetTop) { return 4000;} } );
 });
@@ -56,6 +48,3 @@ $(document).on('page:load', function() {
 skrollr.menu.init(s, { animate: true, easing: 'sqrt',  scale: 1, duration: function(currentTop, targetTop) { return 4000;} } );
 })
 </script>
-
-
-

@@ -10,14 +10,14 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to "Limited Time Library", contributors_path, class: "navbar-brand" %>
-      
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!-- <li class="active"><a href="#"> <span class="sr-only">(current)</span></a></li> -->
-        
+
         <li class = "<%= active_class(root_path)%>">
              <%= link_to 'CONTRIBUTORS', contributors_path %>
         </li>
@@ -27,7 +27,7 @@
         <li class = "<%= active_class(authors_path)%>">
           <%= link_to 'AUTHORS', authors_path %>
         </li>
-       
+
 
         <!-- <li class="dropdown"> -->
           <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a> -->
@@ -51,7 +51,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to "2055 Project", index_path %>
-          
+
         </li>
         <!-- <li class="dropdown"> -->
           <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a> -->
