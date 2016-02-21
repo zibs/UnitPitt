@@ -1,21 +1,21 @@
-class ContributorsController < ApplicationController
+  class ContributorsController < ApplicationController
 	include ContributorsHelper
 
 	def index
-		@contributors        = Contributor.order("created_at DESC").sort_by{ |contributor| contributor.name.split(" ").reverse.join.upcase } 
+		@contributors        = Contributor.order("created_at DESC").sort_by{ |contributor| contributor.name.split(" ").reverse.join.upcase }
 
 		@contributor_results = Contributor.full_search(params[:search]) unless params[:search].nil?
 		@book_results        = Book.full_search(params[:search]) unless params[:search].nil?
 
 		respond_to do |format|
-		    format.html 
+		    format.html
 		   	format.js
 		end
 	# @search_results = Book.text_search(params[:query]).order("created_at DESC")
 	end
 
 	def show
-		@contributors    = Contributor.order("created_at DESC").sort_by{ |contributor| contributor.name.split(" ").reverse.join.upcase } 
+		@contributors    = Contributor.order("created_at DESC").sort_by{ |contributor| contributor.name.split(" ").reverse.join.upcase }
 		@contributor     = Contributor.friendly.find(params[:id])
 		@bio             = Contributor.friendly.find(params[:id]).bio
 		@book_collection = @contributor.books.all

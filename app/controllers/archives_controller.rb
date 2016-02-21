@@ -10,14 +10,16 @@ include Rails.application.routes.url_helpers
 	def about
 	end
 
-
 	def directory
 	end
 
 	def acknowledgments
 	end
-
+#####################################################
 	# BEGIN EXHBITIONS
+  def musikklubphaseinduction
+  end
+  
 	def musikklub
 	end
 
@@ -26,7 +28,7 @@ include Rails.application.routes.url_helpers
 
 	def wishbone
 	end
-      
+
   def musikklubselectorsa
   end
 
@@ -36,6 +38,10 @@ include Rails.application.routes.url_helpers
   def motherhastings
   end
 
+  def whyamiafraidtolove
+  end
+
+#######################################################
 	# BEGIN ARCHIVES
 	def outlaws
 	end

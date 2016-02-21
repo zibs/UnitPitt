@@ -14,6 +14,8 @@ Rails.application.routes.draw do
    get 'titles'  => 'contributors#titles'
 
    # Begin Exhbitions
+   get "MusikKlubPhaseInduction" => "archives#musikklubphaseinduction"
+   get 'Why-Am-I-Afraid-to-Love' => 'archives#whyamiafraidtolove'
    get 'motherhastings' => 'archives#motherhastings'
    get 'musikklubselectorsa' => 'archives#musikklubselectorsa'
    get 'musikklub' =>  'archives#musikklub'
