@@ -32,6 +32,8 @@ gem 'figaro'
 gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'skrollr-rails'
 gem 'pg_search'
+gem "autoprefixer-rails"
+
 
 
 # Use ActiveModel has_secure_password

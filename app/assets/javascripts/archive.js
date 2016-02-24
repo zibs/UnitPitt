@@ -27,6 +27,7 @@ $(document).ready(function() {
         // SWITCH THEM
         $(mainImage).attr( { src: random_src, alt: random_alt} );
         $(".whyami").css({"background-color": randomColor });
+        $(this).css({"transform": "rotate" + "(" + (Math.random() * 300) + "deg)"});
         // yahoo :)
     });
 });
