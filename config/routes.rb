@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 # get 'Slug' => 'controller#ACTION==FILENAME'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-   root 'archives#whyamiafraidtolove'
+   root 'archives#futureconcrete'
 
    get 'about' => 'archives#about'
    get '2055Project' => 'archives#index', as: :index
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
    get 'titles'  => 'contributors#titles'
 
    # Begin Exhbitions
-   get "FutureConcrete" => "archives#futureconcrete"
+   get "FutureConcrete" => "archives#futureconcrete", as: :futureconcrete
    get "MusikKlubPhaseInduction" => "archives#musikklubphaseinduction", as: :phase
    get 'Why-Am-I-Afraid-to-Love' => 'archives#whyamiafraidtolove', as: :whylove
    get 'motherhastings' => 'archives#motherhastings', as: :motherhast

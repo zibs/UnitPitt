@@ -346,7 +346,10 @@ DIRECTORY DIRECOTRY!!!!
 }
 
 .first-row {
-  margin-top: 13%;
+  margin-top: 3%;
+}
+#futurion {
+  z-index: 1000;
 }
 .exhibition {
     font-family: "Lato";
@@ -654,7 +657,14 @@ FUTURECONCRETEFUTURECONCRETEFUTURECONCRETEFUTURECONCRETE
 html.future_concrete {
 
 }
-
+.conc-wrap {
+  a {
+    display: none;
+  }
+}
+body > main > div > a > img {
+  display: none;
+}
 
 
 /* ==========================================================================
@@ -1051,7 +1061,7 @@ html.future_concrete {
     width: 300%;
     cursor: pointer;
   }
-  .futureconcreteimg:first-of-type{
+  .futureconcreteimg:nth-of-type(2){
     display: inline-block;
     // min-height: 100vh;
   }
