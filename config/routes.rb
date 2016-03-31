@@ -14,6 +14,7 @@ Rails.application.routes.draw do
    get 'titles'  => 'contributors#titles'
 
    # Begin Exhbitions
+   get "FutureConcrete" => "archives#futureconcrete"
    get "MusikKlubPhaseInduction" => "archives#musikklubphaseinduction", as: :phase
    get 'Why-Am-I-Afraid-to-Love' => 'archives#whyamiafraidtolove', as: :whylove
    get 'motherhastings' => 'archives#motherhastings', as: :motherhast

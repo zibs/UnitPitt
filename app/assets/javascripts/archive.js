@@ -9,6 +9,7 @@ $(document).ready(function() {
     });
 });
 
+
 $(document).ready(function() {
     // Load up Image Links
     var imagesWrapper = document.getElementsByClassName("why-swap-images");
@@ -161,6 +162,24 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).ready(function() {
+  setTimeout(function(){
+    $(window).scrollTop($(window).height() * 2);
+    $(window).scrollLeft($(window).width()/2);
+  }, 300);
+    $(".futureconcreteimg").click(function() {
+        $(this).css({
+            "display": "none"
+        });
+        $(this).next().fadeIn();
+        $(window).scrollTop($(window).height() * 2);
+        $(window).scrollLeft($(window).width()/2);
+    });
+    // $(window).scrollLeft($(window).width() / 2 );
+    // $(window).scrollTop($(window).height() * 10);
+});
+
 
 // $(".unit-font").hover(function() {
 // var random_font = fonts[(Math.floor(Math.random()*12))]

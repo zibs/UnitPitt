@@ -646,6 +646,17 @@ html.musikklub {
 }
 
 
+
+/* ==========================================================================
+FUTURECONCRETEFUTURECONCRETEFUTURECONCRETEFUTURECONCRETE
+   ========================================================================== */
+
+html.future_concrete {
+
+}
+
+
+
 /* ==========================================================================
 WHYAMIAFRAIDTOLOVEWHYAMIAFRAIDTOLOVEWHYAMIAFRAIDTOLOVEWHYAMIAFRAIDTOLOVE`
    ========================================================================== */
@@ -1020,6 +1031,32 @@ html.sublime > body > main > img.sublime-full-poster {
     height: 100vh;
 }
 
+html.future_concrete {
+  margin: 0;
+
+  body {
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+  }
+  .conc-wrap{
+    position: relative;
+  }
+  .futureconcreteimg {
+    position: absolute;
+    display: none;
+    min-height: 100vh;
+    width: 300%;
+    cursor: pointer;
+  }
+  .futureconcreteimg:first-of-type{
+    display: inline-block;
+    // min-height: 100vh;
+  }
+
+}
 
 /**********************************/
 
